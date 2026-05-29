@@ -1,0 +1,21 @@
+.class public interface abstract Ldc/squareup/okhttp3/Interceptor;
+.super Ljava/lang/Object;
+.source "r8-map-id-b7e255f942986941b37ba04386bb88227968d0c8d32f6fe72c35571a2429720b"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Ldc/squareup/okhttp3/Interceptor$Chain;
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract intercept(Ldc/squareup/okhttp3/Interceptor$Chain;)Ldc/squareup/okhttp3/Response;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method

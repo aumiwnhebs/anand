@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/fw_root"
+    android:background="@drawable/float_bg"
+    android:padding="10.0dip"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@id/fw_header"
+        android:paddingBottom="6.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="14.0sp"
+            android:textStyle="bold"
+            android:textColor="#ff1e1e1e"
+            android:id="@id/fw_title"
+            android:paddingRight="34.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay Info (Long Press To Drag)" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textColor="#ff666666"
+            android:gravity="center"
+            android:id="@id/fw_close"
+            android:layout_width="24.0dip"
+            android:layout_height="24.0dip"
+            android:text="✕"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/fw_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
