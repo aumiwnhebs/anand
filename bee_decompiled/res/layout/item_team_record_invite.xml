@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:id="@id/llRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="40.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="14.0sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_979797"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@id/tvRanking"
+        android:layout_width="35.0dip"
+        android:layout_height="fill_parent"
+        android:text="@string/zero"
+        android:maxLines="1" />
+    <TextView
+        android:textSize="13.0sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@id/tvUid"
+        android:layout_width="100.0dip"
+        android:layout_height="fill_parent"
+        android:text="@string/zero"
+        android:maxLines="1" />
+    <TextView
+        android:textSize="13.0sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_ea7434"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@id/tvOrder"
+        android:layout_width="80.0dip"
+        android:layout_height="fill_parent"
+        android:text="@string/zero"
+        android:maxLines="1" />
+    <TextView
+        android:textSize="13.0sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_365eee"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@id/tvAmount"
+        android:layout_width="110.0dip"
+        android:layout_height="fill_parent"
+        android:text="@string/default_amount"
+        android:maxLines="1" />
+    <TextView
+        android:textSize="13.0sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@id/tvDirectInvitesNum"
+        android:layout_width="100.0dip"
+        android:layout_height="fill_parent"
+        android:text="@string/zero"
+        android:maxLines="1" />
+    <TextView
+        android:textSize="13.0sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@id/tvTotalInviteNum"
+        android:layout_width="120.0dip"
+        android:layout_height="fill_parent"
+        android:text="@string/team_table_total_invites"
+        android:maxLines="1" />
+    <TextView
+        android:textSize="13.0sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@id/tvUplineUid"
+        android:layout_width="100.0dip"
+        android:layout_height="fill_parent"
+        android:text="@string/team_table_upline_uid"
+        android:maxLines="1" />
+</LinearLayout>

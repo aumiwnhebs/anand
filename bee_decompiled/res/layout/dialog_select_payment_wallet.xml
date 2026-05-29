@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/shape_24dp_top_f5f8fe"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="18.0sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18.0dip"
+        android:text="@string/buy_select_wallet"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:layout_gravity="end"
+        android:id="@id/ivClose"
+        android:padding="10.0dip"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:src="@mipmap/ic_dialog_close"
+        android:layout_alignParentEnd="true" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/llTip"
+        android:background="@drawable/shape_12dp_ea7434"
+        android:paddingTop="6.0dip"
+        android:paddingBottom="6.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:layout_below="@id/tvTitle"
+        android:paddingStart="8.0dip"
+        android:paddingEnd="8.0dip"
+        android:layout_marginStart="15.0dip"
+        android:layout_marginEnd="15.0dip">
+        <ImageView
+            android:layout_width="15.0dip"
+            android:layout_height="15.0dip"
+            android:layout_marginTop="2.0dip"
+            android:src="@mipmap/ic_tips" />
+        <TextView
+            android:textSize="12.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_ea7434"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buy_select_wallet_tips"
+            android:layout_marginStart="4.0dip" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/walletRv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llTip" />
+</RelativeLayout>

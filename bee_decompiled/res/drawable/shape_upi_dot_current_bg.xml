@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/shape_upi_dot_bdd2fb" />
+    <item
+        android:gravity="center"
+        android:height="14.0dip"
+        android:width="14.0dip"
+        android:drawable="@drawable/shape_dot_365eee" />
+</layer-list>

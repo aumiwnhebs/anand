@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_task_bg"
+        android:scaleType="fitXY" />
+    <com.mm.bee.pay.view.bar.TitleBar
+        android:id="@id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:barBackground="@color/transparent"
+        app:barText="@string/home_newbie_task" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/shape_20dp_top_ffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="50.0dip"
+        android:layout_below="@id/titleBar">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:layout_marginStart="5.0dip"
+                    android:layout_marginEnd="5.0dip">
+                    <View
+                        android:background="@color/color_d7d7d7"
+                        android:layout_width="46.0dip"
+                        android:layout_height="1.0dip" />
+                    <TextView
+                        android:textSize="16.0sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:id="@id/tvWelcomeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_title_welcome"
+                        android:layout_marginStart="5.0dip"
+                        android:layout_marginEnd="5.0dip" />
+                    <View
+                        android:background="@color/color_d7d7d7"
+                        android:layout_width="46.0dip"
+                        android:layout_height="1.0dip" />
+                </LinearLayout>
+                <TextView
+                    android:textSize="13.0sp"
+                    android:textColor="@color/color_e92b42"
+                    android:id="@id/tvCountdownTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:text="@string/task_distance_end" />
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25.0dip"
+                    android:layout_marginTop="10.0dip">
+                    <TextView
+                        android:textSize="13.0sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:id="@id/tvHour"
+                        android:background="@drawable/shape_5dp_gradient_ffce46_ff9e00"
+                        android:layout_width="25.0dip"
+                        android:layout_height="fill_parent"
+                        android:text="@string/double_zero" />
+                    <TextView
+                        android:textSize="15.0sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_faa311"
+                        android:gravity="center"
+                        android:id="@id/tvCountdownColon1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/colon"
+                        android:layout_marginStart="5.0dip"
+                        android:layout_marginEnd="5.0dip" />
+                    <TextView
+                        android:textSize="13.0sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:id="@id/tvMinute"
+                        android:background="@drawable/shape_5dp_gradient_ffce46_ff9e00"
+                        android:layout_width="25.0dip"
+                        android:layout_height="fill_parent"
+                        android:text="@string/double_zero" />
+                    <TextView
+                        android:textSize="15.0sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_faa311"
+                        android:gravity="center"
+                        android:id="@id/tvCountdownColon2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/colon"
+                        android:layout_marginStart="5.0dip"
+                        android:layout_marginEnd="5.0dip" />
+                    <TextView
+                        android:textSize="13.0sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:id="@id/tvSecond"
+                        android:background="@drawable/shape_5dp_gradient_ffce46_ff9e00"
+                        android:layout_width="25.0dip"
+                        android:layout_height="fill_parent"
+                        android:text="@string/double_zero" />
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_marginStart="40.0dip"
+                    android:layout_marginEnd="40.0dip">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0">
+                        <TextView
+                            android:textSize="12.0sp"
+                            android:textColor="@color/color_666666"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/task_event_recharge" />
+                        <TextView
+                            android:textSize="14.0sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_333333"
+                            android:id="@id/tvDailyRecharge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3.0dip"
+                            android:text="@string/zero" />
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="1.0dip"
+                        android:layout_height="32.0dip"
+                        android:src="@mipmap/ic_home_usdt_line" />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0">
+                        <TextView
+                            android:textSize="12.0sp"
+                            android:textColor="@color/color_666666"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/task_claimable_reward" />
+                        <TextView
+                            android:textSize="14.0sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_333333"
+                            android:id="@id/tvWelcomeRewarded"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3.0dip"
+                            android:text="@string/zero" />
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dip"
+                    android:layout_marginStart="30.0dip"
+                    android:layout_marginEnd="30.0dip">
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+                        <TextView
+                            android:textSize="12.0sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:id="@id/tvTodayRewardsCountTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/task_today_cumulative_promotion" />
+                        <TextView
+                            android:textSize="12.0sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_999999"
+                            android:id="@id/tvTodayRewardsCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/task_today_cumulative_count"
+                            android:layout_marginStart="2.0dip" />
+                    </LinearLayout>
+                    <TextView
+                        android:textSize="12.0sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:id="@id/tvTodayInr"
+                        android:background="@drawable/shape_16dp_365eee"
+                        android:layout_width="51.0dip"
+                        android:layout_height="24.0dip"
+                        android:text="@string/get"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:orientation="horizontal"
+                    android:id="@id/welcomeRecyclerView"
+                    android:scrollbars="none"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_marginStart="20.0dip"
+                    android:layout_marginEnd="10.0dip"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                <TextView
+                    android:textSize="11.0sp"
+                    android:textColor="@color/color_e92b42"
+                    android:id="@id/tvWelcomeTips"
+                    android:background="@drawable/shape_6dp_fef2f3"
+                    android:padding="5.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:text="@string/task_limited_time_tip"
+                    android:layout_marginStart="30.0dip"
+                    android:layout_marginEnd="30.0dip" />
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:layout_marginStart="10.0dip"
+                    android:layout_marginEnd="10.0dip">
+                    <View
+                        android:background="@color/color_d7d7d7"
+                        android:layout_width="46.0dip"
+                        android:layout_height="1.0dip" />
+                    <TextView
+                        android:textSize="16.0sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_title_newbies"
+                        android:layout_marginStart="5.0dip"
+                        android:layout_marginEnd="5.0dip" />
+                    <View
+                        android:background="@color/color_d7d7d7"
+                        android:layout_width="46.0dip"
+                        android:layout_height="1.0dip" />
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:id="@id/llBonus"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13.0dip"
+                    android:layout_marginStart="40.0dip"
+                    android:layout_marginEnd="40.0dip">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0">
+                        <TextView
+                            android:textSize="12.0sp"
+                            android:textColor="@color/color_666666"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/task_bonus" />
+                        <TextView
+                            android:textSize="14.0sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_333333"
+                            android:id="@id/tvTotalAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3.0dip"
+                            android:text="@string/zero" />
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="1.0dip"
+                        android:layout_height="32.0dip"
+                        android:src="@mipmap/ic_home_usdt_line" />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0">
+                        <TextView
+                            android:textSize="12.0sp"
+                            android:textColor="@color/color_666666"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/task_rewarded" />
+                        <TextView
+                            android:textSize="14.0sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_333333"
+                            android:id="@id/tvRewardedAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3.0dip"
+                            android:text="@string/zero" />
+                    </LinearLayout>
+                </LinearLayout>
+                <com.mm.bee.pay.view.recyclerview.NonInterceptRecyclerView
+                    android:id="@id/newbieTaskRecyclerView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="30.0dip" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,110 @@
+.class public final Lio/reactivex/internal/operators/observable/ObservableSampleTimed;
+.super Lio/reactivex/internal/operators/observable/a;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lio/reactivex/internal/operators/observable/ObservableSampleTimed$SampleTimedEmitLast;,
+        Lio/reactivex/internal/operators/observable/ObservableSampleTimed$SampleTimedNoLast;,
+        Lio/reactivex/internal/operators/observable/ObservableSampleTimed$SampleTimedObserver;
+    }
+.end annotation
+
+
+# instance fields
+.field final emitLast:Z
+
+.field final period:J
+
+.field final scheduler:Lio/reactivex/h0;
+
+.field final unit:Ljava/util/concurrent/TimeUnit;
+
+
+# direct methods
+.method public constructor <init>(Lio/reactivex/e0;JLjava/util/concurrent/TimeUnit;Lio/reactivex/h0;Z)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lio/reactivex/e0;",
+            "J",
+            "Ljava/util/concurrent/TimeUnit;",
+            "Lio/reactivex/h0;",
+            "Z)V"
+        }
+    .end annotation
+
+    invoke-direct {p0, p1}, Lio/reactivex/internal/operators/observable/a;-><init>(Lio/reactivex/e0;)V
+
+    iput-wide p2, p0, Lio/reactivex/internal/operators/observable/ObservableSampleTimed;->period:J
+
+    iput-object p4, p0, Lio/reactivex/internal/operators/observable/ObservableSampleTimed;->unit:Ljava/util/concurrent/TimeUnit;
+
+    iput-object p5, p0, Lio/reactivex/internal/operators/observable/ObservableSampleTimed;->scheduler:Lio/reactivex/h0;
+
+    iput-boolean p6, p0, Lio/reactivex/internal/operators/observable/ObservableSampleTimed;->emitLast:Z
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public subscribeActual(Lio/reactivex/g0;)V
+    .locals 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lio/reactivex/g0;",
+            ")V"
+        }
+    .end annotation
+
+    new-instance v1, Lio/reactivex/observers/e;
+
+    invoke-direct {v1, p1}, Lio/reactivex/observers/e;-><init>(Lio/reactivex/g0;)V
+
+    iget-boolean p1, p0, Lio/reactivex/internal/operators/observable/ObservableSampleTimed;->emitLast:Z
+
+    if-eqz p1, :cond_0
+
+    iget-object p1, p0, Lio/reactivex/internal/operators/observable/a;->source:Lio/reactivex/e0;
+
+    new-instance v6, Lio/reactivex/internal/operators/observable/ObservableSampleTimed$SampleTimedEmitLast;
+
+    iget-wide v2, p0, Lio/reactivex/internal/operators/observable/ObservableSampleTimed;->period:J
+
+    iget-object v4, p0, Lio/reactivex/internal/operators/observable/ObservableSampleTimed;->unit:Ljava/util/concurrent/TimeUnit;
+
+    iget-object v5, p0, Lio/reactivex/internal/operators/observable/ObservableSampleTimed;->scheduler:Lio/reactivex/h0;
+
+    move-object v0, v6
+
+    invoke-direct/range {v0 .. v5}, Lio/reactivex/internal/operators/observable/ObservableSampleTimed$SampleTimedEmitLast;-><init>(Lio/reactivex/g0;JLjava/util/concurrent/TimeUnit;Lio/reactivex/h0;)V
+
+    invoke-interface {p1, v6}, Lio/reactivex/e0;->subscribe(Lio/reactivex/g0;)V
+
+    goto :goto_0
+
+    :cond_0
+    iget-object p1, p0, Lio/reactivex/internal/operators/observable/a;->source:Lio/reactivex/e0;
+
+    new-instance v6, Lio/reactivex/internal/operators/observable/ObservableSampleTimed$SampleTimedNoLast;
+
+    iget-wide v2, p0, Lio/reactivex/internal/operators/observable/ObservableSampleTimed;->period:J
+
+    iget-object v4, p0, Lio/reactivex/internal/operators/observable/ObservableSampleTimed;->unit:Ljava/util/concurrent/TimeUnit;
+
+    iget-object v5, p0, Lio/reactivex/internal/operators/observable/ObservableSampleTimed;->scheduler:Lio/reactivex/h0;
+
+    move-object v0, v6
+
+    invoke-direct/range {v0 .. v5}, Lio/reactivex/internal/operators/observable/ObservableSampleTimed$SampleTimedNoLast;-><init>(Lio/reactivex/g0;JLjava/util/concurrent/TimeUnit;Lio/reactivex/h0;)V
+
+    invoke-interface {p1, v6}, Lio/reactivex/e0;->subscribe(Lio/reactivex/g0;)V
+
+    :goto_0
+    return-void
+.end method

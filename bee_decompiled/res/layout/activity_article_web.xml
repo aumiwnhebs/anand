@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:background="@color/color_f5f8fe"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mm.bee.pay.view.bar.TitleBar
+        android:id="@id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:barBackground="@color/color_f5f8fe" />
+    <FrameLayout
+        android:id="@id/web_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/titleBar" />
+</RelativeLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/shape_20dp_ffffff"
+        android:paddingTop="26.0dip"
+        android:paddingBottom="28.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15.0dip"
+        android:layout_marginEnd="15.0dip">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15.0dip"
+            android:layout_marginEnd="15.0dip">
+            <TextView
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@id/tvTitleInviteLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_link"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_666666"
+                android:ellipsize="end"
+                android:id="@id/tvInviteLink"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5.0dip"
+                android:layout_toStartOf="@id/tvCopyInviteLink"
+                android:layout_toEndOf="@id/tvTitleInviteLink" />
+            <TextView
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_365eee"
+                android:gravity="center"
+                android:id="@id/tvCopyInviteLink"
+                android:background="@drawable/shape_16dp_eaeefd"
+                android:layout_width="59.0dip"
+                android:layout_height="28.0dip"
+                android:text="@string/copy"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginStart="15.0dip"
+            android:layout_marginEnd="15.0dip">
+            <TextView
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@id/tvTitleInviteCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_code"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_666666"
+                android:ellipsize="end"
+                android:id="@id/tvInviteCode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5.0dip"
+                android:layout_toStartOf="@id/tvCopyInviteCode"
+                android:layout_toEndOf="@id/tvTitleInviteCode" />
+            <TextView
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_365eee"
+                android:gravity="center"
+                android:id="@id/tvCopyInviteCode"
+                android:background="@drawable/shape_16dp_eaeefd"
+                android:layout_width="59.0dip"
+                android:layout_height="28.0dip"
+                android:text="@string/copy"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30.0dip"
+            android:layout_marginStart="10.0dip"
+            android:layout_marginEnd="10.0dip">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@id/llShareTelegram"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:layout_width="32.0dip"
+                    android:layout_height="32.0dip"
+                    android:src="@mipmap/ic_share_telegram" />
+                <TextView
+                    android:textSize="12.0sp"
+                    android:textColor="@color/color_999999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:text="@string/team_telegram" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@id/llShareFacebook"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:layout_width="32.0dip"
+                    android:layout_height="32.0dip"
+                    android:src="@mipmap/ic_share_facebook" />
+                <TextView
+                    android:textSize="12.0sp"
+                    android:textColor="@color/color_999999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:text="@string/team_facebook" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@id/llShareWhatsApp"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:layout_width="32.0dip"
+                    android:layout_height="32.0dip"
+                    android:src="@mipmap/ic_share_whatsapp" />
+                <TextView
+                    android:textSize="12.0sp"
+                    android:textColor="@color/color_999999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:text="@string/team_whatsapp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@id/llShareX"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:layout_width="32.0dip"
+                    android:layout_height="32.0dip"
+                    android:src="@mipmap/ic_share_x" />
+                <TextView
+                    android:textSize="12.0sp"
+                    android:textColor="@color/color_999999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:text="@string/team_x" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@id/llShareLink"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:layout_width="32.0dip"
+                    android:layout_height="32.0dip"
+                    android:src="@mipmap/ic_share_links" />
+                <TextView
+                    android:textSize="12.0sp"
+                    android:textColor="@color/color_999999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:text="@string/team_share_link" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/tvClose"
+            android:background="@drawable/shape_16dp_365eee"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginTop="30.0dip"
+            android:layout_marginBottom="10.0dip"
+            android:text="@string/upi_got_it"
+            android:layout_marginStart="15.0dip"
+            android:layout_marginEnd="15.0dip" />
+    </LinearLayout>
+</LinearLayout>

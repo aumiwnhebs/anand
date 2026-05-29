@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/color_f5f8fe"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mm.bee.pay.view.bar.TitleBar
+        android:id="@id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:barBackground="@color/color_f5f8fe"
+        app:barText="@string/my_telegram_bot" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/llUnbind"
+        android:background="@drawable/shape_12dp_fff_line_e5e5e5"
+        android:padding="16.0dip"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:layout_marginStart="15.0dip"
+        android:layout_marginEnd="15.0dip">
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@id/tvUnlinkedTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12.0dip"
+            android:text="@string/my_telegram_title" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12.0dip">
+            <TextView
+                android:textSize="14.0sp"
+                android:textColor="@color/color_444444"
+                android:id="@id/tvBindCode"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+            <Button
+                android:textSize="14.0sp"
+                android:textColor="@color/white"
+                android:id="@id/btnCopy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/copy"
+                android:textAllCaps="true"
+                android:layout_marginStart="12.0dip"
+                android:backgroundTint="@color/color_365eee" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dip">
+            <TextView
+                android:textSize="14.0sp"
+                android:textColor="@color/color_444444"
+                android:id="@id/tvTgUserName"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+            <Button
+                android:textSize="14.0sp"
+                android:textColor="#ffffffff"
+                android:id="@id/btnOpenBot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/open"
+                android:textAllCaps="true"
+                android:layout_marginStart="12.0dip"
+                android:backgroundTint="#ff21c362" />
+        </LinearLayout>
+        <TextView
+            android:textSize="13.0sp"
+            android:textColor="@color/color_888888"
+            android:id="@id/tvHint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:text="@string/my_telegram_tip_1" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/llBind"
+        android:background="@drawable/shape_12dp_fff_line_e5e5e5"
+        android:padding="16.0dip"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:layout_marginStart="15.0dip"
+        android:layout_marginEnd="15.0dip">
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@id/tvLinkedTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12.0dip"
+            android:text="@string/my_telegram_bot_linked" />
+        <TextView
+            android:textSize="14.0sp"
+            android:textColor="@color/color_444444"
+            android:id="@id/tvTgUserName2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24.0dip" />
+        <Button
+            android:textSize="14.0sp"
+            android:textColor="@color/color_21c362"
+            android:layout_gravity="end"
+            android:id="@id/btnUnlink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_telegram_bot_linked_open"
+            android:textAllCaps="true"
+            android:backgroundTint="@color/color_e8f7ef" />
+    </LinearLayout>
+</LinearLayout>

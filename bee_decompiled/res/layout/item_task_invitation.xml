@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/llUiStart"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="36.0dip">
+            <ImageView
+                android:id="@id/ivStartStatus"
+                android:layout_width="36.0dip"
+                android:layout_height="fill_parent"
+                android:src="@mipmap/ic_task_invitation_unfinished"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:textSize="13.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_999999"
+                android:ellipsize="end"
+                android:id="@id/tvStartRule"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/task_invitation_rule"
+                android:maxLines="2"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10.0dip"
+                android:layout_marginEnd="6.0dip"
+                android:layout_toStartOf="@id/tvStartRewardAmount"
+                android:layout_toEndOf="@id/ivStartStatus" />
+            <TextView
+                android:textSize="13.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_999999"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:id="@id/tvStartRewardAmount"
+                android:background="@drawable/shape_12dp_efefef"
+                android:layout_width="70.0dip"
+                android:layout_height="24.0dip"
+                android:text="@string/zero"
+                android:maxLines="1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View
+            android:id="@id/lineStartRight"
+            android:background="@color/color_efefef"
+            android:layout_width="10.0dip"
+            android:layout_height="18.0dip"
+            android:layout_marginTop="-3.0dip"
+            android:layout_marginStart="13.0dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/llUiCenter"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@id/lineCenterTop"
+            android:background="@color/color_efefef"
+            android:layout_width="10.0dip"
+            android:layout_height="18.0dip"
+            android:layout_marginStart="13.0dip" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="36.0dip"
+            android:layout_marginTop="-3.0dip">
+            <ImageView
+                android:id="@id/ivCenterStatus"
+                android:layout_width="36.0dip"
+                android:layout_height="fill_parent"
+                android:src="@mipmap/ic_task_invitation_unfinished"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:textSize="13.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_999999"
+                android:ellipsize="end"
+                android:id="@id/tvCenterRule"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/task_invitation_rule"
+                android:maxLines="2"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10.0dip"
+                android:layout_marginEnd="6.0dip"
+                android:layout_toStartOf="@id/tvCenterRewardAmount"
+                android:layout_toEndOf="@id/ivCenterStatus" />
+            <TextView
+                android:textSize="13.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_999999"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:id="@id/tvCenterRewardAmount"
+                android:background="@drawable/shape_12dp_efefef"
+                android:layout_width="70.0dip"
+                android:layout_height="24.0dip"
+                android:text="@string/zero"
+                android:maxLines="1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View
+            android:id="@id/lineCenterBottom"
+            android:background="@color/color_efefef"
+            android:layout_width="10.0dip"
+            android:layout_height="18.0dip"
+            android:layout_marginTop="-3.0dip"
+            android:layout_marginStart="13.0dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/llUiEnd"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@id/lineEndLift"
+            android:background="@color/color_efefef"
+            android:layout_width="10.0dip"
+            android:layout_height="18.0dip"
+            android:layout_marginStart="13.0dip" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="36.0dip"
+            android:layout_marginTop="-3.0dip">
+            <ImageView
+                android:id="@id/ivEndStatus"
+                android:layout_width="36.0dip"
+                android:layout_height="fill_parent"
+                android:src="@mipmap/ic_task_invitation_unfinished"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:textSize="13.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_999999"
+                android:ellipsize="end"
+                android:id="@id/tvEndRule"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/task_invitation_rule"
+                android:maxLines="2"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10.0dip"
+                android:layout_marginEnd="6.0dip"
+                android:layout_toStartOf="@id/tvEndRewardAmount"
+                android:layout_toEndOf="@id/ivEndStatus" />
+            <TextView
+                android:textSize="13.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_999999"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:id="@id/tvEndRewardAmount"
+                android:background="@drawable/shape_12dp_efefef"
+                android:layout_width="70.0dip"
+                android:layout_height="24.0dip"
+                android:text="@string/zero"
+                android:maxLines="1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

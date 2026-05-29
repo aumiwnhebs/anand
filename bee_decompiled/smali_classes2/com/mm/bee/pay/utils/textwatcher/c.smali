@@ -1,0 +1,104 @@
+.class public Lcom/mm/bee/pay/utils/textwatcher/c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/text/TextWatcher;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/mm/bee/pay/utils/textwatcher/c$a;
+    }
+.end annotation
+
+
+# instance fields
+.field private final callback:Lcom/mm/bee/pay/utils/textwatcher/c$a;
+
+.field private final editText:Landroid/widget/EditText;
+
+.field private isEditing:Z
+
+
+# direct methods
+.method public constructor <init>(Landroid/widget/EditText;Lcom/mm/bee/pay/utils/textwatcher/c$a;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 p2, 0x0
+
+    iput-boolean p2, p0, Lcom/mm/bee/pay/utils/textwatcher/c;->isEditing:Z
+
+    iput-object p1, p0, Lcom/mm/bee/pay/utils/textwatcher/c;->editText:Landroid/widget/EditText;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public afterTextChanged(Landroid/text/Editable;)V
+    .locals 2
+
+    iget-boolean v0, p0, Lcom/mm/bee/pay/utils/textwatcher/c;->isEditing:Z
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    :cond_0
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/mm/bee/pay/utils/textwatcher/c;->isEditing:Z
+
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "[^\\p{L}\\p{Nd} ]"
+
+    const-string v1, ""
+
+    invoke-virtual {p1, v0, v1}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_1
+
+    iget-object p1, p0, Lcom/mm/bee/pay/utils/textwatcher/c;->editText:Landroid/widget/EditText;
+
+    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    iget-object p1, p0, Lcom/mm/bee/pay/utils/textwatcher/c;->editText:Landroid/widget/EditText;
+
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    invoke-virtual {p1, v0}, Landroid/widget/EditText;->setSelection(I)V
+
+    :cond_1
+    const/4 p1, 0x0
+
+    iput-boolean p1, p0, Lcom/mm/bee/pay/utils/textwatcher/c;->isEditing:Z
+
+    return-void
+.end method
+
+.method public beforeTextChanged(Ljava/lang/CharSequence;III)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public onTextChanged(Ljava/lang/CharSequence;III)V
+    .locals 0
+
+    return-void
+.end method

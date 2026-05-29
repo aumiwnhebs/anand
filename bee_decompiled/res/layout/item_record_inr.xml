@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/shape_12dp_ffffff"
+    android:paddingBottom="10.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10.0dip"
+    android:layout_marginStart="15.0dip"
+    android:layout_marginEnd="15.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginStart="15.0dip"
+        android:layout_marginEnd="15.0dip">
+        <TextView
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_365eee"
+            android:id="@id/tvAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_amount"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:textSize="14.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_597cfb"
+            android:id="@id/tvStatus"
+            android:background="@drawable/shape_12dp_e7ecff"
+            android:paddingTop="4.0dip"
+            android:paddingBottom="4.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingStart="12.0dip"
+            android:paddingEnd="12.0dip"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginStart="15.0dip"
+        android:layout_marginEnd="15.0dip">
+        <TextView
+            android:textSize="14.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_999999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/record_buy_reward" />
+        <TextView
+            android:textSize="15.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_333333"
+            android:id="@id/tvReward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_amount" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginStart="15.0dip"
+        android:layout_marginEnd="15.0dip">
+        <TextView
+            android:textSize="14.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_999999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/record_buy_total" />
+        <TextView
+            android:textSize="15.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_333333"
+            android:id="@id/tvQuota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_amount" />
+    </LinearLayout>
+    <View
+        android:background="@color/black6"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="20.0dip" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.0dip">
+        <TextView
+            android:textSize="14.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_999999"
+            android:id="@id/tvOrderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/record_buy_order_id"
+            android:layout_marginStart="15.0dip" />
+        <TextView
+            android:textSize="15.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_333333"
+            android:ellipsize="end"
+            android:id="@id/tvOrderId"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:maxLines="1"
+            android:layout_below="@id/tvOrderTitle"
+            android:layout_marginStart="15.0dip"
+            android:layout_toStartOf="@id/ivCopyOrderId" />
+        <ImageView
+            android:id="@id/ivCopyOrderId"
+            android:padding="6.0dip"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:src="@mipmap/ic_copy"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TextView
+        android:textSize="14.0sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_999999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:text="@string/record_buy_completion_time"
+        android:layout_marginStart="15.0dip" />
+    <TextView
+        android:textSize="15.0sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_333333"
+        android:id="@id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginStart="15.0dip" />
+    <TextView
+        android:textSize="15.0sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="end"
+        android:id="@id/tvBuyAgain"
+        android:background="@drawable/shape_12dp_365eee"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="45.0dip"
+        android:layout_marginTop="10.0dip"
+        android:text="@string/record_buy_again"
+        android:paddingStart="15.0dip"
+        android:paddingEnd="15.0dip"
+        android:layout_marginEnd="15.0dip" />
+</LinearLayout>

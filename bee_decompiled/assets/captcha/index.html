@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Captcha Verify</title>
+    <script>
+        window.AliyunCaptchaConfig = {
+            region: 'sgp',
+            prefix: 'nce2som'
+        };
+    </script>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: transparent;
+            overflow: hidden;
+        }
+
+        #captcha-element {
+            width: 100%;
+            height: 100%;
+        }
+
+        #captcha-trigger {
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="captcha-element"></div>
+<div id="captcha-trigger"></div>
+
+<script>
+    var PRIMARY_CAPTCHA_SCRIPT_URL = 'https://o.alicdn.com/captcha-frontend/aliyunCaptcha/AliyunCaptcha.js';
+    var FALLBACK_CAPTCHA_SCRIPT_URL = 'https://apk.beepayoss.com/js/AliyunCaptcha.js';
+    var PRIMARY_CAPTCHA_SCRIPT_LOAD_TIMEOUT_MS = 6000;
+    var FALLBACK_CAPTCHA_SCRIPT_LOAD_TIMEOUT_MS = 12000;
+    var CAPTCHA_INIT_TIMEOUT_MS = 12000;
+    var CAPTCHA_SCRIPT_SOURCES = [
+        {
+            name: 'primary',
+            url: PRIMARY_CAPTCHA_SCRIPT_URL,
+            timeoutMs: PRIMARY_CAPTCHA_SCRIPT_LOAD_TIMEOUT_MS,
+            maxAttempts: 1
+        },
+        {
+            name: 'fallback',
+            url: FALLBACK_CAPTCHA_SCRIPT_URL,
+            timeoutMs: FALLBACK_CAPTCHA_SCRIPT_LOAD_TIMEOUT_MS,
+            maxAttempts: 2
+        }
+    ];
+
+    var captcha;
+    var pendingEncryptedSceneId = null;
+    var hasInitialized = false;
+    var customWidth = 360;
+    var isScriptLoaded = typeof window.initAliyunCaptcha === 'function';
+    var isScriptLoading = false;
+    var currentScriptSourceIndex = 0;
+    var scriptLoadAttemptsBySource = [];
+    for (var sourceIndex = 0; sourceIndex < CAPTCHA_SCRIPT_SOURCES.length; sourceIndex += 1) {
+        scriptLoadAttemptsBySource.push(0);
+    }
+    var scriptLoadTimer = null;
+    var activeScriptLoadId = 0;
+    var captchaScriptTag = null;
+
+    function getRem() {
+        var pageWidth = window.innerWidth || customWidth;
+        if (pageWidth <= customWidth) {
+            return Math.floor(pageWidth / customWidth * 100) / 100;
+        }
+        return 1;
+    }
+
+    function initCaptchaFromNative(encryptedSceneId) {
+        pendingEncryptedSceneId = encryptedSceneId;
+        tryInitCaptcha();
+    }
+
+    function notifyNativeError(message) {
+        window.testInterface && window.testInterface.onCaptchaError(message);
+    }
+
+    function clearScriptLoadTimer(loadId) {
+        if (loadId !== activeScriptLoadId) {
+            return;
+        }
+        if (scriptLoadTimer) {
+            clearTimeout(scriptLoadTimer);
+            scriptLoadTimer = null;
+        }
+    }
+
+    function cleanupScriptTag(loadId) {
+        if (loadId !== activeScriptLoadId) {
+            return;
+        }
+        if (captchaScriptTag && captchaScriptTag.parentNode) {
+            captchaScriptTag.parentNode.removeChild(captchaScriptTag);
+        }
+        captchaScriptTag = null;
+    }
+
+    function getCurrentScriptSource() {
+        return CAPTCHA_SCRIPT_SOURCES[currentScriptSourceIndex] || null;
+    }
+
+    function switchToNextScriptSource() {
+        if (currentScriptSourceIndex >= CAPTCHA_SCRIPT_SOURCES.length - 1) {
+            return false;
+        }
+        currentScriptSourceIndex += 1;
+        return true;
+    }
+
+    function handleScriptLoadFailure(loadId, message) {
+        if (loadId !== activeScriptLoadId) {
+            return;
+        }
+        clearScriptLoadTimer(loadId);
+        cleanupScriptTag(loadId);
+        isScriptLoading = false;
+        if (typeof window.initAliyunCaptcha === 'function') {
+            isScriptLoaded = true;
+            tryInitCaptcha();
+            return;
+        }
+        if (isScriptLoaded) {
+            return;
+        }
+        var source = getCurrentScriptSource();
+        if (!source) {
+            notifyNativeError(message);
+            return;
+        }
+        if (scriptLoadAttemptsBySource[currentScriptSourceIndex] < source.maxAttempts) {
+            loadCaptchaScript();
+            return;
+        }
+        if (switchToNextScriptSource()) {
+            loadCaptchaScript();
+            return;
+        }
+        notifyNativeError(message);
+    }
+
+    function loadCaptchaScript() {
+        if (typeof window.initAliyunCaptcha === 'function') {
+            isScriptLoaded = true;
+            tryInitCaptcha();
+            return;
+        }
+        if (isScriptLoaded || isScriptLoading) {
+            return;
+        }
+
+        var source = getCurrentScriptSource();
+        if (!source) {
+            notifyNativeError('Captcha script is unavailable. Please try again.');
+            return;
+        }
+
+        if (scriptLoadAttemptsBySource[currentScriptSourceIndex] >= source.maxAttempts) {
+            if (switchToNextScriptSource()) {
+                loadCaptchaScript();
+                return;
+            }
+            notifyNativeError('Captcha script is unavailable. Please try again.');
+            return;
+        }
+
+        isScriptLoading = true;
+        scriptLoadAttemptsBySource[currentScriptSourceIndex] += 1;
+        activeScriptLoadId += 1;
+        var loadId = activeScriptLoadId;
+        var scriptUrl = source.url;
+        var scriptTimeoutMs = source.timeoutMs;
+        captchaScriptTag = document.createElement('script');
+        captchaScriptTag.type = 'text/javascript';
+        captchaScriptTag.src = scriptUrl;
+        captchaScriptTag.async = true;
+        captchaScriptTag.onload = function () {
+            if (loadId !== activeScriptLoadId) {
+                return;
+            }
+            clearScriptLoadTimer(loadId);
+            isScriptLoading = false;
+            if (typeof window.initAliyunCaptcha !== 'function') {
+                handleScriptLoadFailure(loadId, 'Captcha script is unavailable. Please try again.');
+                return;
+            }
+            isScriptLoaded = true;
+            tryInitCaptcha();
+        };
+        captchaScriptTag.onerror = function () {
+            handleScriptLoadFailure(loadId, 'Captcha script failed to load. Please check your network and try again.');
+        };
+        document.head.appendChild(captchaScriptTag);
+
+        scriptLoadTimer = setTimeout(function () {
+            if (loadId !== activeScriptLoadId || isScriptLoaded || !isScriptLoading) {
+                return;
+            }
+            handleScriptLoadFailure(loadId, 'Captcha script load timed out. Please check your network and try again.');
+        }, scriptTimeoutMs);
+    }
+
+    function tryInitCaptcha() {
+        if (!pendingEncryptedSceneId || hasInitialized) {
+            return;
+        }
+
+        if (!isScriptLoaded) {
+            loadCaptchaScript();
+            return;
+        }
+
+        if (typeof window.initAliyunCaptcha !== 'function') {
+            notifyNativeError('Captcha script is unavailable. Please try again.');
+            return;
+        }
+
+        try {
+            hasInitialized = true;
+            window.initAliyunCaptcha({
+                SceneId: '16s2h514v',
+                EncryptedSceneId: pendingEncryptedSceneId,
+                mode: 'popup',
+                element: '#captcha-element',
+                button: '#captcha-trigger',
+                success: success,
+                fail: fail,
+                getInstance: getInstance,
+                onError: onError,
+                onClose: onClose,
+                slideStyle: {
+                    width: customWidth,
+                    height: 40
+                },
+                language: 'en',
+                rem: getRem(),
+                timeout: CAPTCHA_INIT_TIMEOUT_MS,
+                dualStack: true,
+                delayBeforeSuccess: false
+            });
+        } catch (error) {
+            hasInitialized = false;
+            notifyNativeError((error && error.message) || 'Failed to initialize captcha');
+        }
+    }
+
+    function getInstance(instance) {
+        captcha = instance;
+        if (captcha && typeof captcha.show === 'function') {
+            captcha.show();
+        }
+        window.testInterface && window.testInterface.onCaptchaReady();
+    }
+
+    function success(captchaVerifyParam) {
+        window.testInterface && window.testInterface.getCaptchaVerifyParam(captchaVerifyParam);
+    }
+
+    function fail(result) {
+        console.error('captcha verify failed', result);
+    }
+
+    function onError(errorInfo) {
+        console.error('captcha init error', errorInfo);
+        var message = 'Failed to initialize captcha';
+        if (errorInfo && errorInfo.msg) {
+            message = errorInfo.msg;
+        }
+        window.testInterface && window.testInterface.onCaptchaError(message);
+    }
+
+    function onClose() {
+        window.testInterface && window.testInterface.onCaptchaClose();
+    }
+
+    loadCaptchaScript();
+</script>
+</body>
+</html>

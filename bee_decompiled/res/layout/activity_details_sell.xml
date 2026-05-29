@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/color_f5f8fe"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mm.bee.pay.view.bar.TitleBar
+        android:id="@id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:barText="@string/record_sell_details_title" />
+    <TextView
+        android:textSize="28.0sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:text="@string/default_amount" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip">
+        <ImageView
+            android:layout_width="24.0dip"
+            android:layout_height="24.0dip"
+            android:layout_marginTop="2.0dip"
+            android:src="@mipmap/ic_sell_yes" />
+        <TextView
+            android:textSize="14.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/record_sell_details_received"
+            android:layout_marginStart="2.0dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30.0dip"
+        android:layout_marginStart="15.0dip"
+        android:layout_marginEnd="15.0dip">
+        <TextView
+            android:textSize="14.0sp"
+            android:textColor="@color/color_999999"
+            android:layout_width="150.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/record_sell_details_wallet" />
+        <TextView
+            android:textSize="15.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="end"
+            android:id="@id/tvSellWallet"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20.0dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:layout_marginStart="15.0dip"
+        android:layout_marginEnd="15.0dip">
+        <TextView
+            android:textSize="14.0sp"
+            android:textColor="@color/color_999999"
+            android:id="@id/tvUpiTitle"
+            android:layout_width="150.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/upi" />
+        <TextView
+            android:textSize="15.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="end"
+            android:id="@id/tvUpi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20.0dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:layout_marginStart="15.0dip"
+        android:layout_marginEnd="15.0dip">
+        <TextView
+            android:textSize="14.0sp"
+            android:textColor="@color/color_999999"
+            android:id="@id/tvUtrTitle"
+            android:layout_width="150.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/utr" />
+        <TextView
+            android:textSize="15.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="end"
+            android:id="@id/tvUtr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20.0dip" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.0dip">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginStart="15.0dip"
+            android:layout_toStartOf="@id/ivCopyOrderId">
+            <TextView
+                android:textSize="14.0sp"
+                android:textColor="@color/color_999999"
+                android:id="@id/tvOrderIdTitle"
+                android:layout_width="150.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/record_usdt_transaction_id" />
+            <TextView
+                android:textSize="15.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="end"
+                android:id="@id/tvOrderId"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20.0dip" />
+        </LinearLayout>
+        <ImageView
+            android:id="@id/ivCopyOrderId"
+            android:padding="6.0dip"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:src="@mipmap/ic_copy"
+            android:layout_marginEnd="6.0dip"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:layout_marginStart="15.0dip"
+        android:layout_marginEnd="15.0dip">
+        <TextView
+            android:textSize="14.0sp"
+            android:textColor="@color/color_999999"
+            android:layout_width="150.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/record_sell_details_transaction_time" />
+        <TextView
+            android:textSize="15.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="end"
+            android:id="@id/tvTxnTime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20.0dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:layout_marginStart="15.0dip"
+        android:layout_marginEnd="15.0dip">
+        <TextView
+            android:textSize="14.0sp"
+            android:textColor="@color/color_999999"
+            android:layout_width="150.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/record_sell_details_end_time" />
+        <TextView
+            android:textSize="15.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="end"
+            android:id="@id/tvEndTime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20.0dip" />
+    </LinearLayout>
+</LinearLayout>

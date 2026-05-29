@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15.0dip"
+    android:layout_marginStart="15.0dip"
+    android:layout_marginEnd="15.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="16.0sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_333333"
+        android:gravity="center"
+        android:id="@id/tvStatusTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upi_enabled" />
+    <TextView
+        android:textSize="14.0sp"
+        android:textColor="@color/color_999999"
+        android:gravity="center_vertical"
+        android:id="@id/tvStatusTips"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:text="@string/upi_enabled_tip" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+.class interface abstract Lg/f;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract registerComponents(Landroid/content/Context;Lcom/bumptech/glide/b;Lcom/bumptech/glide/Registry;)V
+    .param p1    # Landroid/content/Context;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Lcom/bumptech/glide/b;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # Lcom/bumptech/glide/Registry;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+.end method

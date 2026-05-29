@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kongzue.dialogx.util.views.DialogXBaseRelativeLayout
+    android:orientation="vertical"
+    android:id="@id/box_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:baseFocusable="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@id/box_body"
+            android:background="@drawable/rect_dialogx_material_poptip_bkg_night"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100.0dip"
+            android:minHeight="50.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="35.0dip"
+            android:layout_marginEnd="35.0dip"
+            android:elevation="10.0dip">
+            <ImageView
+                android:id="@id/img_dialogx_pop_icon"
+                android:visibility="gone"
+                android:layout_width="26.0dip"
+                android:layout_height="26.0dip"
+                android:layout_marginStart="15.0dip"
+                android:layout_marginEnd="-5.0dip" />
+            <TextView
+                android:textSize="14.0dip"
+                android:textColor="@color/white"
+                android:gravity="start|center"
+                android:id="@id/txt_dialogx_pop_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:text="Sure?"
+                android:layout_weight="1.0"
+                android:layout_marginStart="15.0dip"
+                android:layout_marginEnd="15.0dip" />
+            <RelativeLayout
+                android:id="@id/box_custom"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="14.0dip"
+                android:textColor="@color/dialogxPopButtonBlueDark"
+                android:gravity="start|center"
+                android:id="@id/txt_dialogx_button"
+                android:background="@drawable/button_dialogx_material_night"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:text="Dismiss"
+                android:singleLine="true"
+                android:paddingStart="10.0dip"
+                android:paddingEnd="10.0dip"
+                android:layout_marginStart="-15.0dip"
+                android:layout_marginEnd="5.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.kongzue.dialogx.util.views.DialogXBaseRelativeLayout>

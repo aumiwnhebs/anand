@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/color_365eee"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_welcome_bg"
+        android:scaleType="fitXY" />
+    <ImageView
+        android:layout_width="90.0dip"
+        android:layout_height="90.0dip"
+        android:src="@mipmap/ic_logo_transparent"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

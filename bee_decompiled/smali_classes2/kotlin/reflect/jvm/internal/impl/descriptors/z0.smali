@@ -1,0 +1,65 @@
+.class public interface abstract Lkotlin/reflect/jvm/internal/impl/descriptors/z0;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/reflect/jvm/internal/impl/descriptors/a;
+
+
+# virtual methods
+.method public abstract synthetic accept(Lkotlin/reflect/jvm/internal/impl/descriptors/m;Ljava/lang/Object;)Ljava/lang/Object;
+.end method
+
+.method public abstract synthetic getAnnotations()Lkotlin/reflect/jvm/internal/impl/descriptors/annotations/e;
+.end method
+
+.method public abstract getContainingDeclaration()Lkotlin/reflect/jvm/internal/impl/descriptors/k;
+.end method
+
+.method public abstract synthetic getContextReceiverParameters()Ljava/util/List;
+.end method
+
+.method public abstract synthetic getDispatchReceiverParameter()Lkotlin/reflect/jvm/internal/impl/descriptors/q0;
+.end method
+
+.method public abstract synthetic getExtensionReceiverParameter()Lkotlin/reflect/jvm/internal/impl/descriptors/q0;
+.end method
+
+.method public abstract synthetic getName()Lkotlin/reflect/jvm/internal/impl/name/f;
+.end method
+
+.method public abstract synthetic getOriginal()Lkotlin/reflect/jvm/internal/impl/descriptors/a;
+.end method
+
+.method public abstract synthetic getOriginal()Lkotlin/reflect/jvm/internal/impl/descriptors/k;
+.end method
+
+.method public abstract synthetic getOverriddenDescriptors()Ljava/util/Collection;
+.end method
+
+.method public abstract synthetic getReturnType()Lkotlin/reflect/jvm/internal/impl/types/d0;
+.end method
+
+.method public abstract synthetic getSource()Lkotlin/reflect/jvm/internal/impl/descriptors/s0;
+.end method
+
+.method public abstract getType()Lkotlin/reflect/jvm/internal/impl/types/d0;
+.end method
+
+.method public abstract synthetic getTypeParameters()Ljava/util/List;
+.end method
+
+.method public abstract synthetic getUserData(Lkotlin/reflect/jvm/internal/impl/descriptors/a$a;)Ljava/lang/Object;
+.end method
+
+.method public abstract synthetic getValueParameters()Ljava/util/List;
+.end method
+
+.method public abstract synthetic getVisibility()Lkotlin/reflect/jvm/internal/impl/descriptors/s;
+.end method
+
+.method public abstract synthetic hasSynthesizedParameterNames()Z
+.end method
+
+.method public abstract synthetic substitute(Lkotlin/reflect/jvm/internal/impl/types/TypeSubstitutor;)Lkotlin/reflect/jvm/internal/impl/descriptors/l;
+.end method

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/load_more_loading_view"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip">
+            <ProgressBar
+                android:id="@id/loading_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateDrawable="@drawable/sample_footer_loading_progress"
+                android:layout_marginEnd="4.0dip"
+                style="?android:progressBarStyleSmall" />
+            <TextView
+                android:textSize="14.0sp"
+                android:textColor="@color/color_666666"
+                android:id="@id/loading_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/load_more"
+                android:layout_marginStart="4.0dip" />
+        </LinearLayout>
+        <FrameLayout
+            android:id="@id/load_more_load_fail_view"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip">
+            <TextView
+                android:textColor="@color/color_666666"
+                android:layout_gravity="center"
+                android:id="@id/tv_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/load_failed" />
+        </FrameLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/load_more_load_complete_view"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip">
+            <TextView
+                android:textColor="@color/color_365eee"
+                android:layout_gravity="center"
+                android:paddingTop="5.0dip"
+                android:paddingBottom="5.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/load_complete"
+                android:paddingStart="10.0dip"
+                android:paddingEnd="10.0dip" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/load_more_load_end_view"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip">
+            <TextView
+                android:textSize="15.0sp"
+                android:textColor="@color/color_666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/load_no_more"
+                android:layout_marginStart="24.0dip"
+                android:layout_marginEnd="24.0dip" />
+        </LinearLayout>
+    </FrameLayout>
+    <View
+        android:id="@id/showHeight"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="20.0dip" />
+</LinearLayout>

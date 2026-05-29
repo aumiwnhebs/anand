@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/shape_12dp_ffffff"
+    android:paddingBottom="20.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10.0dip"
+    android:layout_marginStart="15.0dip"
+    android:layout_marginEnd="15.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginStart="15.0dip"
+        android:layout_marginEnd="15.0dip">
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@id/tvType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:textSize="17.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_365eee"
+            android:id="@id/tvAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_amount"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14.0dip"
+        android:layout_marginStart="15.0dip"
+        android:layout_marginEnd="15.0dip">
+        <TextView
+            android:textSize="14.0sp"
+            android:textColor="@color/color_999999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/record_balance"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:textSize="15.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_333333"
+            android:id="@id/tvBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_amount"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14.0dip"
+        android:layout_marginStart="15.0dip"
+        android:layout_marginEnd="15.0dip">
+        <TextView
+            android:textSize="14.0sp"
+            android:textColor="@color/color_999999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:textSize="15.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_333333"
+            android:id="@id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_amount"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

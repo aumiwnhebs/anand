@@ -1,0 +1,539 @@
+.class final Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/reflect/jvm/internal/impl/descriptors/m;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x12
+    name = "a"
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a$a;
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;
+
+
+# direct methods
+.method public constructor <init>(Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->this$0:Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method private final visitPropertyAccessorDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/m0;Ljava/lang/StringBuilder;Ljava/lang/String;)V
+    .locals 2
+
+    iget-object v0, p0, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->this$0:Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;
+
+    invoke-virtual {v0}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;->getPropertyAccessorRenderingPolicy()Lkotlin/reflect/jvm/internal/impl/renderer/PropertyAccessorRenderingPolicy;
+
+    move-result-object v0
+
+    sget-object v1, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a$a;->$EnumSwitchMapping$0:[I
+
+    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v0
+
+    aget v0, v1, v0
+
+    const/4 v1, 0x1
+
+    if-eq v0, v1, :cond_1
+
+    const/4 p3, 0x2
+
+    if-eq v0, p3, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p0, p1, p2}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->visitFunctionDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/w;Ljava/lang/StringBuilder;)V
+
+    goto :goto_0
+
+    :cond_1
+    iget-object v0, p0, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->this$0:Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;
+
+    invoke-static {v0, p1, p2}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;->access$renderAccessorModifiers(Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;Lkotlin/reflect/jvm/internal/impl/descriptors/m0;Ljava/lang/StringBuilder;)V
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p3, " for "
+
+    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p3
+
+    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object p3, p0, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->this$0:Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;
+
+    invoke-interface {p1}, Lkotlin/reflect/jvm/internal/impl/descriptors/m0;->getCorrespondingProperty()Lkotlin/reflect/jvm/internal/impl/descriptors/n0;
+
+    move-result-object p1
+
+    const-string v0, "descriptor.correspondingProperty"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/s;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {p3, p1, p2}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;->access$renderProperty(Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;Lkotlin/reflect/jvm/internal/impl/descriptors/n0;Ljava/lang/StringBuilder;)V
+
+    :goto_0
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic visitClassDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/d;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p2, Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p1, p2}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->visitClassDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/d;Ljava/lang/StringBuilder;)V
+
+    sget-object p1, Lb0/q;->INSTANCE:Lb0/q;
+
+    return-object p1
+.end method
+
+.method public visitClassDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/d;Ljava/lang/StringBuilder;)V
+    .locals 1
+
+    const-string v0, "descriptor"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "builder"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    iget-object v0, p0, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->this$0:Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;
+
+    invoke-static {v0, p1, p2}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;->access$renderClass(Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;Lkotlin/reflect/jvm/internal/impl/descriptors/d;Ljava/lang/StringBuilder;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic visitConstructorDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/j;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p2, Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p1, p2}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->visitConstructorDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/j;Ljava/lang/StringBuilder;)V
+
+    sget-object p1, Lb0/q;->INSTANCE:Lb0/q;
+
+    return-object p1
+.end method
+
+.method public visitConstructorDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/j;Ljava/lang/StringBuilder;)V
+    .locals 1
+
+    const-string v0, "constructorDescriptor"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "builder"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    iget-object v0, p0, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->this$0:Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;
+
+    invoke-static {v0, p1, p2}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;->access$renderConstructor(Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;Lkotlin/reflect/jvm/internal/impl/descriptors/j;Ljava/lang/StringBuilder;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic visitFunctionDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/w;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p2, Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p1, p2}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->visitFunctionDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/w;Ljava/lang/StringBuilder;)V
+
+    sget-object p1, Lb0/q;->INSTANCE:Lb0/q;
+
+    return-object p1
+.end method
+
+.method public visitFunctionDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/w;Ljava/lang/StringBuilder;)V
+    .locals 1
+
+    const-string v0, "descriptor"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "builder"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    iget-object v0, p0, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->this$0:Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;
+
+    invoke-static {v0, p1, p2}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;->access$renderFunction(Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;Lkotlin/reflect/jvm/internal/impl/descriptors/w;Ljava/lang/StringBuilder;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic visitModuleDeclaration(Lkotlin/reflect/jvm/internal/impl/descriptors/c0;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p2, Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p1, p2}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->visitModuleDeclaration(Lkotlin/reflect/jvm/internal/impl/descriptors/c0;Ljava/lang/StringBuilder;)V
+
+    sget-object p1, Lb0/q;->INSTANCE:Lb0/q;
+
+    return-object p1
+.end method
+
+.method public visitModuleDeclaration(Lkotlin/reflect/jvm/internal/impl/descriptors/c0;Ljava/lang/StringBuilder;)V
+    .locals 2
+
+    const-string v0, "descriptor"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "builder"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    iget-object v0, p0, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->this$0:Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;
+
+    const/4 v1, 0x1
+
+    invoke-static {v0, p1, p2, v1}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;->access$renderName(Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;Lkotlin/reflect/jvm/internal/impl/descriptors/k;Ljava/lang/StringBuilder;Z)V
+
+    return-void
+.end method
+
+.method public bridge synthetic visitPackageFragmentDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/f0;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p2, Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p1, p2}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->visitPackageFragmentDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/f0;Ljava/lang/StringBuilder;)V
+
+    sget-object p1, Lb0/q;->INSTANCE:Lb0/q;
+
+    return-object p1
+.end method
+
+.method public visitPackageFragmentDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/f0;Ljava/lang/StringBuilder;)V
+    .locals 1
+
+    const-string v0, "descriptor"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "builder"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    iget-object v0, p0, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->this$0:Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;
+
+    invoke-static {v0, p1, p2}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;->access$renderPackageFragment(Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;Lkotlin/reflect/jvm/internal/impl/descriptors/f0;Ljava/lang/StringBuilder;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic visitPackageViewDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/j0;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p2, Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p1, p2}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->visitPackageViewDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/j0;Ljava/lang/StringBuilder;)V
+
+    sget-object p1, Lb0/q;->INSTANCE:Lb0/q;
+
+    return-object p1
+.end method
+
+.method public visitPackageViewDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/j0;Ljava/lang/StringBuilder;)V
+    .locals 1
+
+    const-string v0, "descriptor"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "builder"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    iget-object v0, p0, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->this$0:Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;
+
+    invoke-static {v0, p1, p2}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;->access$renderPackageView(Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;Lkotlin/reflect/jvm/internal/impl/descriptors/j0;Ljava/lang/StringBuilder;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic visitPropertyDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/n0;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p2, Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p1, p2}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->visitPropertyDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/n0;Ljava/lang/StringBuilder;)V
+
+    sget-object p1, Lb0/q;->INSTANCE:Lb0/q;
+
+    return-object p1
+.end method
+
+.method public visitPropertyDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/n0;Ljava/lang/StringBuilder;)V
+    .locals 1
+
+    const-string v0, "descriptor"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "builder"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    iget-object v0, p0, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->this$0:Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;
+
+    invoke-static {v0, p1, p2}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;->access$renderProperty(Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;Lkotlin/reflect/jvm/internal/impl/descriptors/n0;Ljava/lang/StringBuilder;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic visitPropertyGetterDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/o0;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p2, Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p1, p2}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->visitPropertyGetterDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/o0;Ljava/lang/StringBuilder;)V
+
+    sget-object p1, Lb0/q;->INSTANCE:Lb0/q;
+
+    return-object p1
+.end method
+
+.method public visitPropertyGetterDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/o0;Ljava/lang/StringBuilder;)V
+    .locals 1
+
+    const-string v0, "descriptor"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "builder"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    const-string v0, "getter"
+
+    invoke-direct {p0, p1, p2, v0}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->visitPropertyAccessorDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/m0;Ljava/lang/StringBuilder;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic visitPropertySetterDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/p0;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p2, Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p1, p2}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->visitPropertySetterDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/p0;Ljava/lang/StringBuilder;)V
+
+    sget-object p1, Lb0/q;->INSTANCE:Lb0/q;
+
+    return-object p1
+.end method
+
+.method public visitPropertySetterDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/p0;Ljava/lang/StringBuilder;)V
+    .locals 1
+
+    const-string v0, "descriptor"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "builder"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    const-string v0, "setter"
+
+    invoke-direct {p0, p1, p2, v0}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->visitPropertyAccessorDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/m0;Ljava/lang/StringBuilder;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic visitReceiverParameterDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/q0;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p2, Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p1, p2}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->visitReceiverParameterDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/q0;Ljava/lang/StringBuilder;)V
+
+    sget-object p1, Lb0/q;->INSTANCE:Lb0/q;
+
+    return-object p1
+.end method
+
+.method public visitReceiverParameterDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/q0;Ljava/lang/StringBuilder;)V
+    .locals 1
+
+    const-string v0, "descriptor"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "builder"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    invoke-interface {p1}, Lkotlin/reflect/jvm/internal/impl/descriptors/q0;->getName()Lkotlin/reflect/jvm/internal/impl/name/f;
+
+    move-result-object p1
+
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    return-void
+.end method
+
+.method public bridge synthetic visitTypeAliasDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/w0;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p2, Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p1, p2}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->visitTypeAliasDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/w0;Ljava/lang/StringBuilder;)V
+
+    sget-object p1, Lb0/q;->INSTANCE:Lb0/q;
+
+    return-object p1
+.end method
+
+.method public visitTypeAliasDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/w0;Ljava/lang/StringBuilder;)V
+    .locals 1
+
+    const-string v0, "descriptor"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "builder"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    iget-object v0, p0, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->this$0:Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;
+
+    invoke-static {v0, p1, p2}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;->access$renderTypeAlias(Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;Lkotlin/reflect/jvm/internal/impl/descriptors/w0;Ljava/lang/StringBuilder;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic visitTypeParameterDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/x0;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p2, Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p1, p2}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->visitTypeParameterDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/x0;Ljava/lang/StringBuilder;)V
+
+    sget-object p1, Lb0/q;->INSTANCE:Lb0/q;
+
+    return-object p1
+.end method
+
+.method public visitTypeParameterDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/x0;Ljava/lang/StringBuilder;)V
+    .locals 2
+
+    const-string v0, "descriptor"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "builder"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    iget-object v0, p0, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->this$0:Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;
+
+    const/4 v1, 0x1
+
+    invoke-static {v0, p1, p2, v1}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;->access$renderTypeParameter(Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;Lkotlin/reflect/jvm/internal/impl/descriptors/x0;Ljava/lang/StringBuilder;Z)V
+
+    return-void
+.end method
+
+.method public bridge synthetic visitValueParameterDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/a1;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p2, Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p1, p2}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->visitValueParameterDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/a1;Ljava/lang/StringBuilder;)V
+
+    sget-object p1, Lb0/q;->INSTANCE:Lb0/q;
+
+    return-object p1
+.end method
+
+.method public visitValueParameterDescriptor(Lkotlin/reflect/jvm/internal/impl/descriptors/a1;Ljava/lang/StringBuilder;)V
+    .locals 2
+
+    const-string v0, "descriptor"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "builder"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/s;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    iget-object v0, p0, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl$a;->this$0:Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;
+
+    const/4 v1, 0x1
+
+    invoke-static {v0, p1, v1, p2, v1}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;->access$renderValueParameter(Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;Lkotlin/reflect/jvm/internal/impl/descriptors/a1;ZLjava/lang/StringBuilder;Z)V
+
+    return-void
+.end method

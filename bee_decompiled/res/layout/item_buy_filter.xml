@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:textSize="12.0sp"
+    android:textStyle="bold"
+    android:textColor="@color/color_333333"
+    android:gravity="center"
+    android:id="@id/tvFilterName"
+    android:background="@drawable/shape_12dp_ffffff"
+    android:layout_width="wrap_content"
+    android:layout_height="32.0dip"
+    android:paddingStart="10.0dip"
+    android:paddingEnd="10.0dip"
+    android:layout_marginStart="10.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

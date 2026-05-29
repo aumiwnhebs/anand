@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/shape_16dp_ffffff"
+    android:layout_width="fill_parent"
+    android:layout_height="80.0dip"
+    android:layout_marginBottom="10.0dip"
+    android:paddingStart="16.0dip"
+    android:paddingEnd="16.0dip"
+    android:layout_marginStart="15.0dip"
+    android:layout_marginEnd="15.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@id/ivLogo"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:src="@mipmap/ic_logo"
+        android:layout_centerVertical="true" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="11.0dip"
+        android:layout_toEndOf="@id/ivLogo">
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip">
+            <TextView
+                android:textSize="10.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_06c56d"
+                android:gravity="center"
+                android:id="@id/tvSell"
+                android:background="@drawable/shape_6dp_daf7e9_line_9ae7c4"
+                android:layout_width="26.0dip"
+                android:layout_height="15.0dip"
+                android:text="@string/sell"
+                android:layout_marginEnd="4.0dip" />
+            <TextView
+                android:textSize="10.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_fa5c8c"
+                android:gravity="center"
+                android:id="@id/tvBuy"
+                android:background="@drawable/shape_6dp_fee0e9_line_fbaac3"
+                android:layout_width="26.0dip"
+                android:layout_height="15.0dip"
+                android:text="@string/buy" />
+            <TextView
+                android:textSize="9.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_feb63b"
+                android:id="@id/tvPhonePeTip"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Best for High Value"
+                android:layout_marginStart="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@id/ivUpiSelected"
+        android:layout_width="30.0dip"
+        android:layout_height="30.0dip"
+        android:src="@mipmap/ic_my_right_arrow"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

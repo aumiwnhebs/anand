@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:background="@drawable/shape_16dp_ffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15.0dip"
+        android:layout_marginEnd="15.0dip">
+        <TextView
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18.0dip"
+            android:text="@string/notify"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:textSize="15.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_666666"
+            android:gravity="center"
+            android:id="@id/tvContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22.0dip"
+            android:text="@string/buy_pay_order_action"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginStart="20.0dip"
+            android:layout_marginEnd="20.0dip" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/llBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginTop="25.0dip"
+            android:layout_marginBottom="20.0dip"
+            android:layout_below="@id/tvContent"
+            android:layout_marginStart="15.0dip"
+            android:layout_marginEnd="15.0dip">
+            <TextView
+                android:textSize="16.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_666666"
+                android:gravity="center"
+                android:id="@id/tvPayPostpone"
+                android:background="@drawable/shape_16dp_line_d6d6d6"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="@string/buy_pay_postpone"
+                android:layout_weight="1.0" />
+            <TextView
+                android:textSize="16.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@id/tvPayNow"
+                android:background="@drawable/shape_16dp_365eee"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="@string/buy_pay_now"
+                android:layout_weight="1.0"
+                android:layout_marginStart="10.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/llRoot"
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mm.bee.pay.view.bar.TitleBar
+        android:id="@id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingStart="24.0dip"
+            android:paddingEnd="24.0dip">
+            <TextView
+                android:textSize="24.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.0dip"
+                android:text="@string/login_free_sign" />
+            <TextView
+                android:textSize="15.0sp"
+                android:textColor="@color/black50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:text="@string/login_create_account" />
+            <TextView
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42.0dip"
+                android:text="@string/login_phone"
+                android:layout_marginStart="8.0dip" />
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@id/llPhoneNum"
+                android:background="@drawable/shape_16dp_line_e8e8e8"
+                android:layout_width="fill_parent"
+                android:layout_height="52.0dip"
+                android:layout_marginTop="8.0dip"
+                android:paddingStart="16.0dip"
+                android:paddingEnd="16.0dip">
+                <TextView
+                    android:textSize="15.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_country_code" />
+                <ImageView
+                    android:layout_width="16.0dip"
+                    android:layout_height="16.0dip"
+                    android:src="@mipmap/ic_login_down"
+                    android:layout_marginStart="4.0dip" />
+                <EditText
+                    android:textSize="15.0sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/color_b6b6b6"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:id="@id/etPhoneNum"
+                    android:background="@null"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:hint="@string/login_enter_phone"
+                    android:maxLines="1"
+                    android:maxLength="10"
+                    android:digits="\ 1234567890"
+                    android:layout_weight="1.0"
+                    android:inputType="phone"
+                    android:layout_marginStart="10.0dip" />
+            </LinearLayout>
+            <TextView
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:text="@string/login_password"
+                android:layout_marginStart="8.0dip" />
+            <RelativeLayout
+                android:background="@drawable/shape_16dp_line_e8e8e8"
+                android:layout_width="fill_parent"
+                android:layout_height="52.0dip"
+                android:layout_marginTop="8.0dip">
+                <EditText
+                    android:textSize="15.0sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/color_b6b6b6"
+                    android:id="@id/etPassword"
+                    android:background="@null"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:hint="@string/login_enter_password"
+                    android:maxLines="1"
+                    android:inputType="textPassword"
+                    android:layout_marginStart="16.0dip"
+                    android:layout_marginEnd="16.0dip"
+                    android:layout_toStartOf="@id/ivSee" />
+                <ImageView
+                    android:id="@id/ivSee"
+                    android:padding="13.0dip"
+                    android:layout_width="52.0dip"
+                    android:layout_height="fill_parent"
+                    android:src="@mipmap/ic_login_eye_off"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <TextView
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:text="@string/login_password_again"
+                android:layout_marginStart="8.0dip" />
+            <RelativeLayout
+                android:background="@drawable/shape_16dp_line_e8e8e8"
+                android:layout_width="fill_parent"
+                android:layout_height="52.0dip"
+                android:layout_marginTop="8.0dip">
+                <EditText
+                    android:textSize="15.0sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/color_b6b6b6"
+                    android:id="@id/etAgainPassword"
+                    android:background="@null"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:hint="@string/login_password_again_password"
+                    android:maxLines="1"
+                    android:inputType="textPassword"
+                    android:layout_marginStart="16.0dip"
+                    android:layout_marginEnd="16.0dip"
+                    android:layout_toStartOf="@id/ivAgainSee" />
+                <ImageView
+                    android:id="@id/ivAgainSee"
+                    android:padding="13.0dip"
+                    android:layout_width="52.0dip"
+                    android:layout_height="fill_parent"
+                    android:src="@mipmap/ic_login_eye_off"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <TextView
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:text="@string/login_invite_code"
+                android:layout_marginStart="8.0dip" />
+            <EditText
+                android:textSize="15.0sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_b6b6b6"
+                android:gravity="center_vertical"
+                android:id="@id/etInviteCode"
+                android:background="@drawable/shape_16dp_line_e8e8e8"
+                android:layout_width="fill_parent"
+                android:layout_height="52.0dip"
+                android:layout_marginTop="8.0dip"
+                android:hint="@string/login_hint_enter_referral"
+                android:lines="1"
+                android:inputType="text"
+                android:paddingStart="17.0dip"
+                android:paddingEnd="0.0dip" />
+            <TextView
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:text="@string/login_otp"
+                android:layout_marginStart="8.0dip" />
+            <RelativeLayout
+                android:background="@drawable/shape_16dp_line_e8e8e8"
+                android:layout_width="fill_parent"
+                android:layout_height="52.0dip"
+                android:layout_marginTop="8.0dip"
+                android:paddingStart="17.0dip"
+                android:paddingEnd="0.0dip">
+                <EditText
+                    android:textSize="15.0sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/color_b6b6b6"
+                    android:id="@id/etOtp"
+                    android:background="@null"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:hint="@string/login_otp_enter"
+                    android:lines="1"
+                    android:maxLength="6"
+                    android:inputType="number"
+                    android:layout_marginEnd="15.0dip"
+                    android:layout_toStartOf="@id/llSendOTP" />
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:id="@id/llSendOTP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentEnd="true">
+                    <View
+                        android:background="@color/color_e9e9e9"
+                        android:layout_width="1.0dip"
+                        android:layout_height="20.0dip" />
+                    <TextView
+                        android:textSize="14.0sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_365eee"
+                        android:gravity="center"
+                        android:id="@id/tvSendOTP"
+                        android:layout_width="103.0dip"
+                        android:layout_height="fill_parent"
+                        android:text="@string/login_otp_send" />
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView
+                android:textSize="16.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@id/tvRegister"
+                android:background="@drawable/shape_16dp_365eee"
+                android:layout_width="fill_parent"
+                android:layout_height="52.0dip"
+                android:layout_marginTop="50.0dip"
+                android:text="@string/login_create_account_btn" />
+            <TextView
+                android:textSize="15.0sp"
+                android:textColor="@color/color_666666"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:text="@string/login_already_account" />
+            <TextView
+                android:textSize="15.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_365eee"
+                android:gravity="bottom"
+                android:layout_gravity="center_horizontal"
+                android:id="@id/tvFinish"
+                android:background="@drawable/shape_text_bottom_line_365eee"
+                android:layout_width="wrap_content"
+                android:layout_height="25.0dip"
+                android:layout_marginBottom="15.0dip"
+                android:text="@string/login_sign_now" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

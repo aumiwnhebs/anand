@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mm.bee.pay.view.MySwipeRefreshLayout
+    android:id="@id/refreshLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:id="@id/rlFilter"
+            android:layout_width="fill_parent"
+            android:layout_height="32.0dip"
+            android:layout_marginTop="15.0dip"
+            android:layout_below="@id/rlTitle"
+            android:layout_marginEnd="15.0dip">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/filterRecyclerView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginEnd="5.0dip"
+                android:layout_toStartOf="@id/rlFilterDown"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            <RelativeLayout
+                android:id="@id/rlFilterDown"
+                android:background="@drawable/shape_12dp_ffffff"
+                android:visibility="gone"
+                android:layout_width="35.0dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentEnd="true">
+                <ImageView
+                    android:layout_width="16.0dip"
+                    android:layout_height="16.0dip"
+                    android:src="@mipmap/ic_black_down"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/inrRecyclerView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5.0dip"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </LinearLayout>
+</com.mm.bee.pay.view.MySwipeRefreshLayout>

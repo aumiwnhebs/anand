@@ -1,0 +1,55 @@
+.class public final Lkotlin/collections/ArraysKt___ArraysKt$o;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/sequences/m;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lkotlin/collections/ArraysKt___ArraysKt;->asSequence([F)Lkotlin/sequences/m;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic $this_asSequence$inlined:[F
+
+
+# direct methods
+.method public constructor <init>([F)V
+    .locals 0
+
+    iput-object p1, p0, Lkotlin/collections/ArraysKt___ArraysKt$o;->$this_asSequence$inlined:[F
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public iterator()Ljava/util/Iterator;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Iterator<",
+            "Ljava/lang/Float;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysKt$o;->$this_asSequence$inlined:[F
+
+    invoke-static {v0}, Lkotlin/jvm/internal/i;->iterator([F)Lkotlin/collections/b0;
+
+    move-result-object v0
+
+    return-object v0
+.end method

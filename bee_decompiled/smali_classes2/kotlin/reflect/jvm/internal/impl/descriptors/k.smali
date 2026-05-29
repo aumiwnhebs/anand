@@ -1,0 +1,35 @@
+.class public interface abstract Lkotlin/reflect/jvm/internal/impl/descriptors/k;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/reflect/jvm/internal/impl/descriptors/e0;
+.implements Lkotlin/reflect/jvm/internal/impl/descriptors/annotations/a;
+
+
+# virtual methods
+.method public abstract accept(Lkotlin/reflect/jvm/internal/impl/descriptors/m;Ljava/lang/Object;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<R:",
+            "Ljava/lang/Object;",
+            "D:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lkotlin/reflect/jvm/internal/impl/descriptors/m;",
+            "TD;)TR;"
+        }
+    .end annotation
+.end method
+
+.method public abstract synthetic getAnnotations()Lkotlin/reflect/jvm/internal/impl/descriptors/annotations/e;
+.end method
+
+.method public abstract getContainingDeclaration()Lkotlin/reflect/jvm/internal/impl/descriptors/k;
+.end method
+
+.method public abstract synthetic getName()Lkotlin/reflect/jvm/internal/impl/name/f;
+.end method
+
+.method public abstract getOriginal()Lkotlin/reflect/jvm/internal/impl/descriptors/k;
+.end method

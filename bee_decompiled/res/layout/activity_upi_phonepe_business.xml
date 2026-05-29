@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/shape_gradient_cbe5ff_ffffff"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mm.bee.pay.view.bar.TitleBar
+        android:id="@id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:barText="@string/author_upi_phonepe_business"
+        app:rightText="@string/author_upi_phonepe_business_confirm_login"
+        app:rightTextColor="@color/color_365eee"
+        app:rightTextShow="false"
+        app:rightTextSize="13.0sp" />
+    <FrameLayout
+        android:id="@id/web_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

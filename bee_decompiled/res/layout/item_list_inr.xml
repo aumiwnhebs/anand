@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@id/rlInrBg"
+    android:background="@drawable/shape_20dp_ffffff"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10.0dip"
+    android:paddingStart="12.0dip"
+    android:paddingEnd="12.0dip"
+    android:layout_marginStart="16.0dip"
+    android:layout_marginEnd="16.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@id/rlTop"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip">
+        <TextView
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@id/tvPaymentAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8.0dip" />
+        <TextView
+            android:textSize="13.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:id="@id/tvType"
+            android:background="@drawable/shape_8dp_fdf02a"
+            android:paddingTop="4.0dip"
+            android:paddingBottom="4.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bank"
+            android:layout_centerVertical="true"
+            android:paddingStart="8.0dip"
+            android:paddingEnd="8.0dip"
+            android:layout_marginStart="8.0dip"
+            android:layout_toEndOf="@id/tvPaymentAmount" />
+        <ImageView
+            android:id="@id/ivSticky"
+            android:visibility="gone"
+            android:layout_width="14.0dip"
+            android:layout_height="15.0dip"
+            android:src="@mipmap/ic_inr_sticky"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="14.0dip"
+            android:layout_toEndOf="@id/tvType" />
+        <TextView
+            android:textSize="14.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/tvBuy"
+            android:background="@drawable/shape_12dp_365eee"
+            android:layout_width="89.0dip"
+            android:layout_height="32.0dip"
+            android:text="@string/buy"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View
+        android:id="@id/line"
+        android:background="@color/black6"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_below="@id/rlTop" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@id/llAmount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14.0dip"
+        android:layout_marginBottom="16.0dip"
+        android:layout_below="@id/line"
+        android:layout_marginStart="22.0dip">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2">
+            <TextView
+                android:textSize="13.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_878891"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/income" />
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip">
+                <TextView
+                    android:textSize="18.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_365eee"
+                    android:id="@id/tvReward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/default_amount" />
+                <TextView
+                    android:textSize="12.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_365eee"
+                    android:gravity="center"
+                    android:id="@id/tvRateAmount"
+                    android:background="@drawable/shape_12dp_line_dfe5fc"
+                    android:paddingTop="1.0dip"
+                    android:paddingBottom="1.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8.0dip"
+                    android:paddingEnd="8.0dip"
+                    android:layout_marginStart="4.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+            <TextView
+                android:textSize="13.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_878891"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quota" />
+            <TextView
+                android:textSize="18.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@id/tvQuota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:text="@string/add_zero" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/shape_24_gradient_b5e8fd_ffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginEnd="16.0dip">
+        <ImageView
+            android:layout_gravity="end"
+            android:id="@id/ivClose"
+            android:padding="10.0dip"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:layout_marginTop="5.0dip"
+            android:src="@mipmap/ic_dialog_close"
+            android:layout_marginEnd="5.0dip" />
+        <TextView
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/team_scan_qr_register" />
+        <ImageView
+            android:id="@id/ivQrCode"
+            android:layout_width="164.0dip"
+            android:layout_height="164.0dip"
+            android:layout_marginTop="10.0dip"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_666666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="@string/team_welcome_aboard" />
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@mipmap/ic_team_shape_qr_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="130.0dip"
+            android:layout_marginTop="12.0dip"
+            android:layout_marginBottom="20.0dip"
+            android:layout_marginStart="20.0dip"
+            android:layout_marginEnd="20.0dip">
+            <ImageView
+                android:id="@id/ivHead"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_marginTop="8.0dip"
+                android:src="@mipmap/ic_my_head" />
+            <TextView
+                android:textSize="12.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_fdffff"
+                android:id="@id/tvMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip" />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14.0dip"
+                android:layout_marginStart="30.0dip"
+                android:layout_marginEnd="30.0dip">
+                <TextView
+                    android:textSize="16.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/team_your_earnings" />
+                <TextView
+                    android:textSize="16.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_fdf02a"
+                    android:id="@id/tvMyTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/default_amount"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

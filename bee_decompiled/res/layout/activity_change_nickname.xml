@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/color_f5f8fe"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mm.bee.pay.view.bar.TitleBar
+        android:id="@id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:barBackground="@color/color_f5f8fe"
+        app:barText="@string/my_change_nickname" />
+    <EditText
+        android:textSize="14.0sp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/color_868686"
+        android:gravity="center_vertical"
+        android:id="@id/etName"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginTop="5.0dip"
+        android:hint="@string/my_enter_change_nickname"
+        android:maxLines="1"
+        android:maxLength="50"
+        android:paddingStart="20.0dip"
+        android:paddingEnd="20.0dip" />
+    <TextView
+        android:textSize="15.0sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@id/tvSave"
+        android:background="@drawable/shape_25dp_365eee"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:layout_marginTop="50.0dip"
+        android:text="@string/save"
+        android:layout_marginStart="20.0dip"
+        android:layout_marginEnd="20.0dip" />
+</LinearLayout>
