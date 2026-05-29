@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@id/outSideView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bgdp14"
+        android:paddingTop="@dimen/dp14"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/dp47"
+        android:layout_marginEnd="@dimen/dp47">
+        <TextView
+            android:textSize="@dimen/sp18"
+            android:textStyle="bold"
+            android:textColor="#ff010101"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp14"
+            android:text="@string/tips" />
+        <View
+            android:background="#33707070"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp1" />
+        <TextView
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold"
+            android:textColor="#ff010101"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp37"
+            android:layout_marginBottom="@dimen/dp46"
+            android:text="@string/close_withdraw" />
+        <View
+            android:background="#33707070"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp1" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/ll_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/sp16"
+                android:textColor="#ff030f08"
+                android:gravity="center"
+                android:id="@id/cancelTxt"
+                android:paddingTop="@dimen/dp8"
+                android:paddingBottom="@dimen/dp14"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:layout_weight="1.0" />
+            <View
+                android:layout_gravity="center_vertical"
+                android:background="#33707070"
+                android:layout_width="@dimen/dp1"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:textSize="@dimen/sp17"
+                android:textStyle="bold"
+                android:textColor="@color/CoMainA"
+                android:gravity="center"
+                android:id="@id/confirmTxt"
+                android:paddingTop="@dimen/dp8"
+                android:paddingBottom="@dimen/dp14"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

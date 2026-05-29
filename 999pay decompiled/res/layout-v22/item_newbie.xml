@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@drawable/bg_white_rounded_16"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp5"
+    android:layout_marginBottom="@dimen/dp5"
+    android:layout_marginVertical="@dimen/dp5"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@id/itemRel"
+        android:paddingLeft="@dimen/dp12"
+        android:paddingTop="@dimen/dp16"
+        android:paddingRight="@dimen/dp12"
+        android:paddingBottom="@dimen/dp16"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dp12"
+        android:paddingVertical="@dimen/dp16">
+        <ImageView
+            android:id="@id/changeImg"
+            android:layout_width="@dimen/dp42"
+            android:layout_height="@dimen/dp42"
+            android:layout_marginEnd="@dimen/dp8" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp9"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/changeImg">
+            <TextView
+                android:textSize="@dimen/sp15"
+                android:textStyle="bold"
+                android:textColor="#ff333333"
+                android:id="@id/nameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:id="@id/goToTuTor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp6"
+                android:text="@string/view_tutorial" />
+        </LinearLayout>
+        <TextView
+            android:textSize="@dimen/sp14"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:id="@id/endTxt"
+            android:background="@drawable/bg_newbie_rectangle2"
+            android:layout_width="@dimen/dp64"
+            android:layout_height="@dimen/dp33"
+            android:text="Done"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View
+        android:id="@id/lineView"
+        android:background="#ffe4e8ee"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginLeft="@dimen/dp12"
+        android:layout_marginRight="@dimen/dp12"
+        android:layout_marginHorizontal="@dimen/dp12" />
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/dp47"
+        android:layout_marginEnd="@dimen/dp47">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/bgdp12"
+            android:paddingTop="@dimen/dp17"
+            android:paddingBottom="@dimen/dp21"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/sp19"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@id/textView"
+                android:paddingBottom="@dimen/dp17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/exclusive_qr_code"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@id/imageView"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_marginRight="@dimen/dp30"
+                android:layout_marginHorizontal="@dimen/dp30"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:textSize="@dimen/sp21"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:id="@id/saveView"
+            android:background="@drawable/bgdp12_main"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp56"
+            android:layout_marginTop="@dimen/dp20"
+            android:text="@string/save_and_share" />
+    </LinearLayout>
+</RelativeLayout>

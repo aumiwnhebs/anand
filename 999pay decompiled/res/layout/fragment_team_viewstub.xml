@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:id="@id/bigLin"
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.lihang.ShadowLayout
+        android:id="@id/topSha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp30"
+        android:layout_alignParentTop="true"
+        app:hl_shadowColor="#12000000"
+        app:hl_shadowHiddenLeft="true"
+        app:hl_shadowHiddenRight="true"
+        app:hl_shadowHiddenTop="true"
+        app:hl_shadowLimit="@dimen/dp6"
+        app:hl_shadowOffsetY="@dimen/dp3">
+        <RelativeLayout
+            android:paddingRight="@dimen/dp8"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp47">
+            <TextView
+                android:textSize="@dimen/sp17"
+                android:textStyle="bold"
+                android:textColor="#ff030f08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_four"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </com.lihang.ShadowLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:orientation="vertical"
+        android:id="@id/rvd5"
+        android:paddingBottom="@dimen/dp50"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/topSha"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginEnd="@dimen/dp16"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</RelativeLayout>

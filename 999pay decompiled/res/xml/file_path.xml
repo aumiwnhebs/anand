@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <external-path
+        name="images"
+        path="." />
+    <external-cache-path
+        name="mn_update_external_cache"
+        path="." />
+    <cache-path
+        name="mn_update_cache"
+        path="." />
+    <external-path
+        name="mn_update_external_path"
+        path="." />
+    <files-path
+        name="mn_update_files_path"
+        path="." />
+    <external-files-path
+        name="mn_update_external_files_path"
+        path="." />
+    <root-path
+        name="mn_update_root_path"
+        path="." />
+    <external-path
+        name="external-path"
+        path="." />
+    <external-cache-path
+        name="external-cache-path"
+        path="." />
+    <external-files-path
+        name="external-files-path"
+        path="." />
+    <files-path
+        name="files_path"
+        path="." />
+    <cache-path
+        name="cache-path"
+        path="." />
+    <root-path
+        name="name"
+        path="." />
+</resources>

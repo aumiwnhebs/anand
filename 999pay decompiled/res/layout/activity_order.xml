@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="false"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/titleView"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginTop="@dimen/dp30"
+            android:paddingStart="@dimen/dp16">
+            <TextView
+                android:textSize="@dimen/sp17"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order"
+                android:layout_centerInParent="true" />
+            <ImageView
+                android:id="@id/backImg"
+                android:layout_width="@dimen/dp24"
+                android:layout_height="@dimen/dp24"
+                android:src="@mipmap/back"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@id/xTabLayout"
+            android:background="@color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp48"
+            app:xTabDisplayNum="2"
+            app:xTabDividerWidthWidthText="true"
+            app:xTabIndicatorColor="@color/CoMainA"
+            app:xTabIndicatorHeight="@dimen/dp5"
+            app:xTabIndicatorRoundX="@dimen/dp2"
+            app:xTabIndicatorRoundY="@dimen/dp2"
+            app:xTabMode="scrollable"
+            app:xTabSelectedTextColor="@color/CoMainA"
+            app:xTabSelectedTextSize="@dimen/sp17"
+            app:xTabTextColor="@color/Co505377"
+            app:xTabTextSelectedBold="true"
+            app:xTabTextSize="@dimen/sp17" />
+        <androidx.viewpager.widget.ViewPager
+            android:id="@id/viewPager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

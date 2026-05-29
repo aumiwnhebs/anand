@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:background="@drawable/bgdp14top"
+        android:paddingBottom="@dimen/dp44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@id/cancelView"
+            android:paddingTop="@dimen/dp14"
+            android:paddingBottom="@dimen/dp21"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/sp18"
+                android:textStyle="bold"
+                android:textColor="#ff010101"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose"
+                android:layout_centerInParent="true" />
+            <ImageView
+                android:layout_width="@dimen/dp26"
+                android:layout_height="@dimen/dp26"
+                android:src="@mipmap/x_dia"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp17"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View
+            android:background="#33707070"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp1"
+            android:layout_marginBottom="@dimen/dp45" />
+        <TextView
+            android:textSize="@dimen/sp17"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:id="@id/cameraTxt"
+            android:background="@drawable/bgdp12_main"
+            android:paddingTop="@dimen/dp16"
+            android:paddingBottom="@dimen/dp16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp28"
+            android:layout_marginRight="@dimen/dp28"
+            android:text="Camera"
+            android:layout_marginHorizontal="@dimen/dp28"
+            android:paddingVertical="@dimen/dp16" />
+        <TextView
+            android:textSize="@dimen/sp17"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:id="@id/pictureTxt"
+            android:background="@drawable/bgdp12_main"
+            android:paddingTop="@dimen/dp16"
+            android:paddingBottom="@dimen/dp16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp28"
+            android:layout_marginTop="@dimen/dp24"
+            android:layout_marginRight="@dimen/dp28"
+            android:text="Picture"
+            android:layout_marginHorizontal="@dimen/dp28"
+            android:paddingVertical="@dimen/dp16" />
+    </LinearLayout>
+</RelativeLayout>

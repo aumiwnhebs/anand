@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/CoF2F5FA"
+    android:fitsSystemWindows="false"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/titleView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp30" />
+        <RelativeLayout
+            android:background="@drawable/bgdp_bot_12"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp50"
+            android:paddingStart="@dimen/dp16">
+            <TextView
+                android:textSize="@dimen/sp17"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wallet"
+                android:layout_centerInParent="true" />
+            <ImageView
+                android:id="@id/backImg"
+                android:layout_width="@dimen/dp24"
+                android:layout_height="@dimen/dp24"
+                android:src="@mipmap/back"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:id="@id/playView"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:paddingEnd="@dimen/dp17"
+                android:layout_alignParentEnd="true">
+                <TextView
+                    android:textSize="@dimen/sp14"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tutorial"
+                    android:layout_marginEnd="@dimen/dp6" />
+                <ImageView
+                    android:id="@id/playImg"
+                    android:layout_width="@dimen/dp16"
+                    android:layout_height="@dimen/dp16"
+                    android:src="@mipmap/play_img" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@id/m_refresh"
+        android:paddingLeft="@dimen/dp8"
+        android:paddingRight="@dimen/dp8"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:orientation="vertical"
+            android:id="@id/rv_r_d3big"
+            android:paddingTop="@dimen/dp8"
+            android:clipToPadding="false"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

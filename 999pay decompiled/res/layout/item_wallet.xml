@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="@dimen/dp14"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:textSize="@dimen/sp20"
+        android:textStyle="bold"
+        android:textColor="#ff1f1f1f"
+        android:id="@id/nameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PhonePe" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp14"
+        android:layout_below="@id/nameTxt">
+        <TextView
+            android:textSize="@dimen/sp10"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:id="@id/buyTxt"
+            android:background="@drawable/bgdp4cb"
+            android:paddingLeft="@dimen/dp16"
+            android:paddingTop="@dimen/dp4"
+            android:paddingRight="@dimen/dp16"
+            android:paddingBottom="@dimen/dp4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy" />
+        <TextView
+            android:textSize="@dimen/sp10"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:id="@id/sellTxt"
+            android:background="@drawable/bgdp4_06"
+            android:paddingLeft="@dimen/dp16"
+            android:paddingTop="@dimen/dp4"
+            android:paddingRight="@dimen/dp16"
+            android:paddingBottom="@dimen/dp4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sell"
+            android:layout_marginStart="@dimen/dp8" />
+    </LinearLayout>
+    <ImageView
+        android:id="@id/rightImg"
+        android:layout_width="@dimen/dp140"
+        android:layout_height="@dimen/dp55"
+        android:src="@mipmap/logo"
+        android:scaleType="centerInside"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

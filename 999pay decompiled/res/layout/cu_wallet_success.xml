@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@id/outSideView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bgdp14"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/dp47"
+        android:layout_marginEnd="@dimen/dp47">
+        <ImageView
+            android:layout_width="@dimen/dp37"
+            android:layout_height="@dimen/dp37"
+            android:layout_marginTop="@dimen/dp18"
+            android:src="@mipmap/we_success"
+            android:scaleType="fitXY" />
+        <TextView
+            android:textSize="@dimen/sp18"
+            android:textStyle="bold"
+            android:textColor="#ff010101"
+            android:gravity="center"
+            android:id="@id/contentTxt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp14"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp14"
+            android:layout_marginBottom="@dimen/dp22"
+            android:text="@string/submission_successful"
+            android:lineSpacingExtra="@dimen/dp7" />
+        <TextView
+            android:textSize="@dimen/sp17"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:id="@id/completeTxt"
+            android:background="@drawable/bgdp12_main"
+            android:layout_width="@dimen/dp156"
+            android:layout_height="@dimen/dp52"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp22"
+            android:text="Complete" />
+    </LinearLayout>
+</RelativeLayout>

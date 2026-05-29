@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:fitsSystemWindows="false"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <RelativeLayout
+        android:id="@id/aniRel"
+        android:background="@color/CoMainA"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.india.cnm.view.shimmer.ShimmerFrameLayout
+            android:id="@id/sfl_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:shimmer_duration="1000">
+            <TextView
+                android:textSize="@dimen/sp35"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:id="@id/loadTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp120"
+                android:text="@string/app_name"
+                android:alpha="0.95" />
+        </com.india.cnm.view.shimmer.ShimmerFrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

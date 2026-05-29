@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="@color/wheel_title_bar_background_color"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="@dimen/wheel_title_bar_cancel_size"
+        android:textColor="@color/wheel_title_bar_cancel_color"
+        android:id="@id/wheel_id_title_bar_cancel"
+        android:paddingLeft="12.0dip"
+        android:paddingTop="8.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingBottom="8.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@android:string/cancel" />
+    <TextView
+        android:textSize="@dimen/wheel_title_bar_ok_size"
+        android:textColor="@color/wheel_title_bar_ok_color"
+        android:layout_gravity="right"
+        android:id="@id/wheel_id_title_bar_ok"
+        android:paddingLeft="12.0dip"
+        android:paddingTop="8.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingBottom="8.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@android:string/ok" />
+    <TextView
+        android:textSize="@dimen/wheel_title_bar_title_size"
+        android:textColor="@color/wheel_title_bar_title_color"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_vertical"
+        android:id="@id/wheel_id_title_bar_title"
+        android:paddingLeft="12.0dip"
+        android:paddingTop="8.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingBottom="8.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</FrameLayout>

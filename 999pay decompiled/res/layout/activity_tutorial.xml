@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/CoF2F5FA"
+    android:fitsSystemWindows="false"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/titleView"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginTop="@dimen/dp30"
+            android:paddingStart="@dimen/dp16">
+            <TextView
+                android:textSize="@dimen/sp17"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tutorial"
+                android:layout_centerInParent="true" />
+            <ImageView
+                android:id="@id/backImg"
+                android:layout_width="@dimen/dp24"
+                android:layout_height="@dimen/dp24"
+                android:src="@mipmap/back"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp61">
+        <RelativeLayout
+            android:id="@id/allView"
+            android:background="@drawable/bgdp8ef"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp41"
+            android:layout_centerVertical="true"
+            android:paddingStart="@dimen/dp10"
+            android:paddingEnd="@dimen/dp4">
+            <EditText
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textColorHint="#ff777777"
+                android:id="@id/mET"
+                android:background="@null"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:hint="@string/please_enter_key_words"
+                android:singleLine="true"
+                android:maxLength="50"
+                android:inputType="text"
+                android:imeOptions="actionSearch"
+                android:textCursorDrawable="@drawable/bgcursor" />
+            <ImageView
+                android:id="@id/clearImg"
+                android:background="@mipmap/logincleartxt"
+                android:visibility="invisible"
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp20"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp15"
+                android:layout_toStartOf="@id/searchView" />
+            <TextView
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:gravity="center"
+                android:id="@id/searchView"
+                android:background="@drawable/bgdp8main"
+                android:paddingLeft="@dimen/dp7"
+                android:paddingRight="@dimen/dp7"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp33"
+                android:text="@string/search"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@id/m_refresh"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:orientation="vertical"
+            android:id="@id/rv_r_d3big"
+            android:paddingTop="@dimen/dp16"
+            android:clipToPadding="false"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

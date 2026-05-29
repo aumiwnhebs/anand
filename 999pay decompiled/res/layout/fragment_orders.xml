@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:id="@id/bigLin"
+    android:background="@color/CoF2F5FA"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/titleView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:background="@color/white"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp30" />
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp50"
+                android:paddingStart="@dimen/dp15">
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+                    <ImageView
+                        android:layout_width="@dimen/dp22"
+                        android:layout_height="@dimen/dp22"
+                        android:src="@mipmap/zuan"
+                        android:layout_marginEnd="@dimen/dp4" />
+                    <TextView
+                        android:textSize="@dimen/sp14"
+                        android:textStyle="bold"
+                        android:textColor="#ff010101"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/in_transaction"
+                        android:layout_marginEnd="@dimen/dp8" />
+                    <TextView
+                        android:textSize="@dimen/sp14"
+                        android:textStyle="bold"
+                        android:textColor="#ff010101"
+                        android:id="@id/itTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp8" />
+                </LinearLayout>
+                <ImageView
+                    android:id="@id/serviceView"
+                    android:layout_width="@dimen/dp84"
+                    android:layout_height="@dimen/dp32"
+                    android:src="@mipmap/service_top"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp15"
+                    android:layout_alignParentEnd="true" />
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="@dimen/dp29"
+                    android:layout_height="@dimen/dp28"
+                    android:src="@mipmap/service_img"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@id/xTablayout"
+            android:background="@drawable/bgdp16top_b"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp40"
+            app:xTabDisplayNum="2"
+            app:xTabDividerWidthWidthText="true"
+            app:xTabIndicatorColor="@color/CoMainA"
+            app:xTabIndicatorHeight="@dimen/dp5"
+            app:xTabIndicatorRoundX="@dimen/dp2"
+            app:xTabIndicatorRoundY="@dimen/dp2"
+            app:xTabMode="scrollable"
+            app:xTabSelectedTextColor="@color/black"
+            app:xTabSelectedTextSize="@dimen/sp17"
+            app:xTabTextColor="@color/Co505377"
+            app:xTabTextSelectedBold="true"
+            app:xTabTextSize="@dimen/sp17" />
+        <androidx.viewpager.widget.ViewPager
+            android:id="@id/viewPager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </LinearLayout>
+</RelativeLayout>

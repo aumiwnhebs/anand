@@ -1,0 +1,79 @@
+.class Lcom/india/cnm/activity/FForgotActivity$2;
+.super Lcom/india/cnm/api/DisposableWrapper;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/india/cnm/activity/FForgotActivity;->httpGetSetPwd()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/india/cnm/api/DisposableWrapper<",
+        "Lcom/india/cnm/bean/LoginBean;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/india/cnm/activity/FForgotActivity;
+
+
+# direct methods
+.method constructor <init>(Lcom/india/cnm/activity/FForgotActivity;Landroid/app/Dialog;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/india/cnm/activity/FForgotActivity$2;->this$0:Lcom/india/cnm/activity/FForgotActivity;
+
+    invoke-direct {p0, p2}, Lcom/india/cnm/api/DisposableWrapper;-><init>(Landroid/app/Dialog;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onError(Ljava/lang/Throwable;)V
+    .locals 0
+
+    invoke-super {p0, p1}, Lcom/india/cnm/api/DisposableWrapper;->onError(Ljava/lang/Throwable;)V
+
+    return-void
+.end method
+
+.method public onNext(Lcom/india/cnm/bean/LoginBean;)V
+    .locals 0
+
+    .line 1
+    if-nez p1, :cond_0
+
+    return-void
+
+    :cond_0
+    const-string p1, ""
+
+    invoke-static {p1}, Lcom/india/cnm/utils/ToastUtils;->show2(Ljava/lang/String;)V
+
+    iget-object p1, p0, Lcom/india/cnm/activity/FForgotActivity$2;->this$0:Lcom/india/cnm/activity/FForgotActivity;
+
+    invoke-virtual {p1}, Landroid/app/Activity;->finish()V
+
+    return-void
+.end method
+
+.method public bridge synthetic onNext(Ljava/lang/Object;)V
+    .locals 0
+
+    .line 2
+    check-cast p1, Lcom/india/cnm/bean/LoginBean;
+
+    invoke-virtual {p0, p1}, Lcom/india/cnm/activity/FForgotActivity$2;->onNext(Lcom/india/cnm/bean/LoginBean;)V
+
+    return-void
+.end method

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:id="@id/conRel"
+    android:background="@color/transparent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bgdp14_white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/dp22"
+        android:layout_marginEnd="@dimen/dp22">
+        <ImageView
+            android:id="@id/closeImg"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp10"
+            android:src="@mipmap/xgray"
+            android:layout_alignParentRight="true" />
+        <TextView
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold"
+            android:textColor="#ff000000"
+            android:gravity="center"
+            android:id="@id/titleTxt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginBottom="@dimen/dp14"
+            android:text="@string/view_video"
+            android:layout_centerHorizontal="true" />
+        <xyz.doikki.videoplayer.player.VideoView
+            android:id="@id/player"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp400"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_marginRight="@dimen/dp12"
+            android:layout_marginBottom="@dimen/dp12"
+            android:layout_below="@id/titleTxt2"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

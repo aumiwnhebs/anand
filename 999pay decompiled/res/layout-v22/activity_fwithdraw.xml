@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="false"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/titleView"
+        android:background="@drawable/bg_mine_header_gradient1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginTop="@dimen/dp30"
+            android:paddingStart="@dimen/dp16">
+            <TextView
+                android:textSize="@dimen/sp17"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/withdraw"
+                android:layout_centerInParent="true" />
+            <ImageView
+                android:id="@id/backImg"
+                android:layout_width="@dimen/dp24"
+                android:layout_height="@dimen/dp24"
+                android:src="@mipmap/back_b"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp16"
+            android:paddingRight="@dimen/dp16"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp44"
+            android:layout_marginTop="@dimen/dp10"
+            android:paddingHorizontal="@dimen/dp16">
+            <TextView
+                android:textSize="@dimen/sp15"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@id/tv_pending"
+                android:background="@mipmap/bg_rectangle_left"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="@string/pending"
+                android:layout_weight="1.0" />
+            <TextView
+                android:textSize="@dimen/sp15"
+                android:textStyle="bold"
+                android:textColor="@color/CoE7E4F4"
+                android:gravity="center"
+                android:id="@id/tv_success"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="@string/success"
+                android:layout_weight="1.0" />
+            <TextView
+                android:textSize="@dimen/sp15"
+                android:textStyle="bold"
+                android:textColor="@color/CoE7E4F4"
+                android:gravity="center"
+                android:id="@id/tv_timeout"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="@string/timeout"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#fff2f5fa"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@id/viewPager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

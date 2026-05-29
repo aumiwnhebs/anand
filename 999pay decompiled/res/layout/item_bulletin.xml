@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@drawable/bgdp4_white"
+    android:paddingLeft="@dimen/dp15"
+    android:paddingTop="@dimen/dp10"
+    android:paddingRight="@dimen/dp15"
+    android:paddingBottom="@dimen/dp10"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:textSize="@dimen/sp12"
+        android:textStyle="bold"
+        android:textColor="#ff505377"
+        android:id="@id/timeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="@dimen/sp14"
+        android:textStyle="bold"
+        android:textColor="#ff010101"
+        android:id="@id/titleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_below="@id/timeTxt"
+        android:layout_marginEnd="@dimen/dp12"
+        android:layout_toStartOf="@id/rightImg"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:id="@id/rightImg"
+        android:layout_width="@dimen/dp24"
+        android:layout_height="@dimen/dp24"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

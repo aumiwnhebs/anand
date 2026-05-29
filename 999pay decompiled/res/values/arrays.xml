@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dusty">
+        <item>\#FFB99D79</item>
+        <item>\#FF6C5635</item>
+    </string-array>
+    <string-array name="preload_classes">
+        <item>com.google.gson.Gson</item>
+        <item>com.india.cnm.fragment.HomeOneFragment</item>
+        <item>androidx.fragment.app.FragmentActivity</item>
+        <item>androidx.fragment.app.FragmentController</item>
+        <item>androidx.fragment.app.FragmentManagerViewModel</item>
+        <item>androidx.appcompat.widget.Toolbar</item>
+        <item>androidx.appcompat.widget.ActionBarContextView</item>
+        <item>androidx.appcompat.widget.VectorEnabledTintResources</item>
+        <item>androidx.lifecycle.ReportFragment</item>
+        <item>com.google.firebase.StartupTime</item>
+        <item>com.google.firebase.AutoValue_StartupTime</item>
+        <item>androidx.collection.SimpleArrayMap</item>
+        <item>androidx.collection.ArrayMap</item>
+        <item>com.google.android.gms.common.R$string</item>
+        <item>androidx.customview.view.AbsSavedState$2</item>
+        <item>com.google.android.gms.internal.measurement.zzbz</item>
+        <item>com.google.android.gms.measurement.internal.zzkj</item>
+        <item>com.india.cnm.service.MyJobIntentService</item>
+        <item>com.youth.banner.Banner</item>
+        <item>com.india.cnm.adapter.diff.DiffcallbackD3</item>
+        <item>com.india.cnm.adapter.diff.DiffcallbackFish</item>
+        <item>com.india.cnm.adapter.diff.DiffcallbackKerala</item>
+        <item>com.india.cnm.adapter.diff.DiffcallbackD5</item>
+        <item>com.india.cnm.adapter.diff.DiffcallbackScratch</item>
+        <item>com.india.cnm.adapter.diff.DiffcallbackSatta</item>
+        <item>com.india.cnm.fragment.HomeTwoFragment</item>
+        <item>com.india.cnm.fragment.HomeThreeFragment</item>
+        <item>com.india.cnm.fragment.HomeFourFragment</item>
+        <item>com.india.cnm.fragment.MyFragment</item>
+        <item>com.lihang.R</item>
+        <item>com.lihang.ShadowLayout</item>
+        <item>androidx.core.view.ViewParentCompat</item>
+        <item>com.bumptech.glide.request.target.CustomViewTarget</item>
+        <item>com.india.cnm.service.msg.OverlayMsgHelperDelay</item>
+        <item>com.india.cnm.service.msg.OverlayMsgHelper2</item>
+        <item>com.india.cnm.bean.CheckPrizeBean</item>
+        <item>com.india.cnm.view.BazierAnimView</item>
+        <item>com.india.cnm.fragment.OrderFragmentD3</item>
+        <item>com.google.android.material.shape.MaterialShapeDrawable</item>
+        <item>com.india.cnm.view.shimmer.ConfigLoadingView</item>
+        <item>com.google.android.material.shape.AdjustedCornerSize</item>
+        <item>com.india.cnm.fragment.ResultFragmentD3</item>
+        <item>com.india.cnm.adapter.PageAdapterResultD3</item>
+        <item>com.india.cnm.fragment.ResultFragmentD3_ViewBinding</item>
+        <item>com.india.cnm.activity.D3Activity_ViewBinding</item>
+        <item>com.india.cnm.fragment.OrderFragmentD3_ViewBinding</item>
+        <item>com.india.cnm.fragment.AnalyzeFragmentD3_ViewBinding</item>
+        <item>com.india.cnm.bean.DetailsBeanD3</item>
+        <item>com.india.cnm.bean.DetailsBeanD3_</item>
+        <item>com.india.cnm.adapter.CountAdapterA</item>
+        <item>com.india.cnm.adapter.MinAdapter</item>
+        <item>com.india.cnm.adapter.PmAdapter</item>
+        <item>com.india.cnm.adapter.VpD3Adapter</item>
+        <item>com.india.cnm.adapter.PopD3Adapter</item>
+        <item>com.india.cnm.adapter.VipAnaD3Adapter</item>
+        <item>com.india.cnm.adapter.AnalyzeD3TopAdapter2</item>
+        <item>com.india.cnm.adapter.OrderAdapterD3In</item>
+        <item>com.india.cnm.adapter.OrderAdapterD3</item>
+        <item>com.india.cnm.fragment.HomeFourFragment_ViewBinding</item>
+        <item>com.india.cnm.adapter.ProAdapter</item>
+        <item>com.just.agentweb.PermissionInterceptor</item>
+        <item>com.india.cnm.activity.InfoWebActivityBridge</item>
+        <item>com.just.agentweb.AbsAgentWebSettings</item>
+        <item>com.just.agentweb.AgentWeb</item>
+        <item>com.just.agentweb.IWebIndicator</item>
+        <item>com.just.agentweb.WebCreator</item>
+        <item>com.india.cnm.activity.PromotionsActivity</item>
+        <item>com.india.cnm.adapter.diff.DiffcallbackPro</item>
+        <item>com.india.cnm.fragment.HomeFourFragment$HomeFouFragment_ViewHolder</item>
+        <item>com.india.cnm.fragment.HomeFourFragment$HomeFouFragment_ViewHolder_ViewBinding</item>
+        <item>com.google.firebase.messaging.reporting.MessagingClientEvent</item>
+        <item>com.google.android.material.snackbar.BaseTransientBottomBar</item>
+        <item>com.google.android.material.snackbar.Snackbar</item>
+        <item>com.just.agentweb.AgentWebView</item>
+        <item>com.just.agentweb.WebIndicator</item>
+        <item>com.download.library.DownloadListenerAdapter</item>
+        <item>com.just.agentweb.DefaultUIController</item>
+        <item>com.just.agentweb.R</item>
+        <item>com.just.agentweb.AgentActionFragment</item>
+        <item>com.download.library.DownloadImpl</item>
+        <item>com.download.library.DownloadTask</item>
+        <item>com.download.library.Runtime</item>
+        <item>com.india.cnm.view.CustomDialog</item>
+        <item>com.india.cnm.webview.MyWebActivity</item>
+        <item>com.india.cnm.webview.WebViewBlankDetector</item>
+        <item>com.india.cnm.webview.MyWebActivity_ViewBinding</item>
+        <item>com.india.cnm.fragment.MyFragment_ViewBinding</item>
+        <item>com.india.cnm.bean.MemberInfo_</item>
+        <item>com.india.cnm.bean.MemberLogBean_</item>
+        <item>androidx.viewpager2.widget.ViewPager2</item>
+        <item>androidx.core.view.DragAndDropPermissionsCompat</item>
+        <item>com.just.agentweb.HookManager</item>
+        <item>com.just.agentweb.DefaultDownloadImpl</item>
+        <item>com.just.agentweb.UrlLoaderImpl</item>
+        <item>com.just.agentweb.AgentWebConfig</item>
+        <item>androidx.loader.content.AsyncTaskLoader</item>
+        <item>com.india.cnm.webview.AndroidInterface</item>
+        <item>com.just.agentweb.AgentWebPermissions</item>
+        <item>io.reactivex.internal.util.NotificationLite</item>
+        <item>com.india.cnm.activity.InfoWebActivityBridge_ViewBinding</item>
+        <item>com.google.firebase.messaging.NotificationParams</item>
+    </string-array>
+    <string-array name="weather_cloudy">
+        <item>\#FF5C82C1</item>
+        <item>\#FF95B1DB</item>
+    </string-array>
+    <string-array name="weather_cloudy_light">
+        <item>\#FF2C3A60</item>
+        <item>\#FF4B6685</item>
+    </string-array>
+    <string-array name="weather_foggy">
+        <item>\#FFA6B3C2</item>
+        <item>\#FF737F88</item>
+    </string-array>
+    <string-array name="weather_hazy">
+        <item>\#FF989898</item>
+        <item>\#FF4B4B4B</item>
+    </string-array>
+    <string-array name="weather_heavySnow">
+        <item>\#FF98A2BC</item>
+        <item>\#FFA7ADBF</item>
+    </string-array>
+    <string-array name="weather_lightRainy">
+        <item>\#FF556782</item>
+        <item>\#FF7c8b99</item>
+    </string-array>
+    <string-array name="weather_lightSnow">
+        <item>\#FF6989BA</item>
+        <item>\#FF9DB0CE</item>
+    </string-array>
+    <string-array name="weather_middleRainy">
+        <item>\#FF3A4B65</item>
+        <item>\#FF495764</item>
+    </string-array>
+    <string-array name="weather_middleSnow">
+        <item>\#FF8595AD</item>
+        <item>\#FF95A4BF</item>
+    </string-array>
+    <string-array name="weather_overcast">
+        <item>\#FF8FA3C0</item>
+        <item>\#FF8C9FB1</item>
+    </string-array>
+    <string-array name="weather_sunny">
+        <item>\#FF0071D1</item>
+        <item>\#FF6DA6E4</item>
+    </string-array>
+    <string-array name="weather_sunny_light">
+        <item>\#FF061E74</item>
+        <item>\#FF275E9A</item>
+    </string-array>
+    <string-array name="weather_thunder">
+        <item>\#FF3B434E</item>
+        <item>\#FF565D66</item>
+    </string-array>
+</resources>

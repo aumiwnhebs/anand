@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/bigLin"
+    android:background="@color/CoF2F5FA"
+    android:paddingLeft="@dimen/dp16"
+    android:paddingTop="@dimen/dp16"
+    android:paddingRight="@dimen/dp16"
+    android:paddingBottom="@dimen/dp16"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingHorizontal="@dimen/dp16"
+    android:paddingVertical="@dimen/dp16"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@id/m_refresh"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_mentoring_card_gradient"
+                    android:paddingBottom="@dimen/dp10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:background="@mipmap/bg_new1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dp112">
+                        <TextView
+                            android:textSize="@dimen/sp12"
+                            android:textColor="@color/CoMainA"
+                            android:id="@id/timeTxt"
+                            android:background="@drawable/bg_light_purple_banner2"
+                            android:paddingTop="@dimen/dp5"
+                            android:paddingBottom="@dimen/dp5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp15"
+                            android:layout_alignParentBottom="true"
+                            android:paddingVertical="@dimen/dp5" />
+                        <ImageView
+                            android:id="@id/leftImg"
+                            android:layout_width="@dimen/dp80"
+                            android:layout_height="@dimen/dp80"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:src="@mipmap/zuan_n" />
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp20"
+                            android:layout_marginStart="@dimen/dp12"
+                            android:layout_toEndOf="@id/leftImg">
+                            <TextView
+                                android:textSize="@dimen/sp14"
+                                android:textColor="#ff777777"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/mentoring_bonus_incoin" />
+                            <TextView
+                                android:textSize="@dimen/sp26"
+                                android:textStyle="bold"
+                                android:textColor="#ff333333"
+                                android:id="@id/inCoinTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <TextView
+                            android:textSize="@dimen/sp14"
+                            android:textColor="@color/white"
+                            android:id="@id/detailView"
+                            android:background="@drawable/bg_purple_rounded_button"
+                            android:paddingLeft="@dimen/dp16"
+                            android:paddingTop="@dimen/dp6"
+                            android:paddingRight="@dimen/dp16"
+                            android:paddingBottom="@dimen/dp6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dp10"
+                            android:text="@string/detail"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:paddingHorizontal="@dimen/dp16"
+                            android:paddingVertical="@dimen/dp6" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="@dimen/sp12"
+                            android:textColor="@color/CoMainA"
+                            android:id="@id/levelTag"
+                            android:background="@drawable/bg_light_purple_banner1"
+                            android:paddingLeft="@dimen/dp12"
+                            android:paddingTop="@dimen/dp4"
+                            android:paddingRight="@dimen/dp12"
+                            android:paddingBottom="@dimen/dp4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My Level"
+                            android:layout_centerVertical="true"
+                            android:paddingHorizontal="@dimen/dp12"
+                            android:paddingVertical="@dimen/dp4" />
+                        <TextView
+                            android:textSize="@dimen/sp20"
+                            android:textStyle="bold"
+                            android:textColor="@color/CoMainA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="A"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dp12"
+                            android:layout_toEndOf="@id/levelTag" />
+                        <ImageView
+                            android:layout_width="@dimen/dp30"
+                            android:layout_height="@dimen/dp40"
+                            android:layout_marginRight="@dimen/dp10"
+                            android:src="@mipmap/bgaward"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                    <TextView
+                        android:textSize="@dimen/sp14"
+                        android:textColor="#ff777777"
+                        android:id="@id/mySelfTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:layout_marginTop="@dimen/dp12" />
+                    <TextView
+                        android:textSize="@dimen/sp16"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:id="@id/receiveTxt"
+                        android:background="@drawable/bg_purple_rounded_button"
+                        android:paddingLeft="@dimen/dp20"
+                        android:paddingTop="@dimen/dp10"
+                        android:paddingRight="@dimen/dp20"
+                        android:paddingBottom="@dimen/dp10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:layout_marginTop="@dimen/dp12"
+                        android:minWidth="@dimen/dp120"
+                        android:text="Receive 800.0"
+                        android:paddingHorizontal="@dimen/dp20"
+                        android:paddingVertical="@dimen/dp10" />
+                </LinearLayout>
+                <TextView
+                    android:textSize="@dimen/sp18"
+                    android:textStyle="bold"
+                    android:textColor="#ff333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:text="Orders" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:orientation="vertical"
+                    android:id="@id/rv_r_keralabig"
+                    android:paddingBottom="@dimen/dp30"
+                    android:clipToPadding="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,717 @@
+.class public final Lokhttp3/g;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lokhttp3/g$a;
+    }
+.end annotation
+
+
+# static fields
+.field public static final c:Lokhttp3/g;
+
+
+# instance fields
+.field private final a:Ljava/util/Set;
+
+.field private final b:Lu5/c;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lokhttp3/g$a;
+
+    invoke-direct {v0}, Lokhttp3/g$a;-><init>()V
+
+    invoke-virtual {v0}, Lokhttp3/g$a;->a()Lokhttp3/g;
+
+    move-result-object v0
+
+    sput-object v0, Lokhttp3/g;->c:Lokhttp3/g;
+
+    return-void
+.end method
+
+.method constructor <init>(Ljava/util/Set;Lu5/c;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lokhttp3/g;->a:Ljava/util/Set;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lokhttp3/g;->b:Lu5/c;
+
+    .line 7
+    .line 8
+    return-void
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
+    .line 186
+    .line 187
+    .line 188
+    .line 189
+    .line 190
+    .line 191
+    .line 192
+    .line 193
+    .line 194
+    .line 195
+    .line 196
+.end method
+
+.method public static c(Ljava/security/cert/Certificate;)Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    instance-of v0, p0, Ljava/security/cert/X509Certificate;
+
+    if-eqz v0, :cond_0
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "sha256/"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    check-cast p0, Ljava/security/cert/X509Certificate;
+
+    invoke-static {p0}, Lokhttp3/g;->d(Ljava/security/cert/X509Certificate;)Lokio/ByteString;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lokio/ByteString;->base64()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    const-string v0, "Certificate pinning requires X509 certificates"
+
+    invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method static d(Ljava/security/cert/X509Certificate;)Lokio/ByteString;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Ljava/security/cert/Certificate;->getPublicKey()Ljava/security/PublicKey;
+
+    move-result-object p0
+
+    invoke-interface {p0}, Ljava/security/Key;->getEncoded()[B
+
+    move-result-object p0
+
+    invoke-static {p0}, Lokio/ByteString;->of([B)Lokio/ByteString;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lokio/ByteString;->sha256()Lokio/ByteString;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public a(Ljava/lang/String;Ljava/util/List;)V
+    .locals 8
+
+    .line 1
+    invoke-virtual {p0, p1}, Lokhttp3/g;->b(Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    return-void
+
+    :cond_0
+    iget-object v1, p0, Lokhttp3/g;->b:Lu5/c;
+
+    if-eqz v1, :cond_1
+
+    invoke-virtual {v1, p2, p1}, Lu5/c;->a(Ljava/util/List;Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object p2
+
+    :cond_1
+    invoke-interface {p2}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    :goto_0
+    const/4 v4, 0x0
+
+    if-ge v3, v1, :cond_3
+
+    invoke-interface {p2, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Ljava/security/cert/X509Certificate;
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v5
+
+    if-gtz v5, :cond_2
+
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-static {p1}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
+
+    throw v4
+
+    :cond_3
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Certificate pinning failure!"
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v3, "\n  Peer certificate chain:"
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-interface {p2}, Ljava/util/List;->size()I
+
+    move-result v3
+
+    const/4 v5, 0x0
+
+    :goto_1
+    const-string v6, "\n    "
+
+    if-ge v5, v3, :cond_4
+
+    invoke-interface {p2, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/security/cert/X509Certificate;
+
+    invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-static {v7}, Lokhttp3/g;->c(Ljava/security/cert/Certificate;)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v6, ": "
+
+    invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v7}, Ljava/security/cert/X509Certificate;->getSubjectDN()Ljava/security/Principal;
+
+    move-result-object v6
+
+    invoke-interface {v6}, Ljava/security/Principal;->getName()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    add-int/lit8 v5, v5, 0x1
+
+    goto :goto_1
+
+    :cond_4
+    const-string p2, "\n  Pinned certificates for "
+
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p1, ":"
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result p1
+
+    :goto_2
+    if-ge v2, p1, :cond_5
+
+    invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p2
+
+    invoke-static {p2}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
+
+    invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_2
+
+    :cond_5
+    new-instance p1, Ljavax/net/ssl/SSLPeerUnverifiedException;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-direct {p1, p2}, Ljavax/net/ssl/SSLPeerUnverifiedException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method b(Ljava/lang/String;)Ljava/util/List;
+    .locals 2
+
+    .line 1
+    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
+
+    move-result-object p1
+
+    iget-object v0, p0, Lokhttp3/g;->a:Ljava/util/Set;
+
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    return-object p1
+
+    :cond_0
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-static {p1}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method e(Lu5/c;)Lokhttp3/g;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lokhttp3/g;->b:Lu5/c;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p1}, Ll5/c;->q(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    move-object v0, p0
+
+    .line 10
+    goto :goto_0
+
+    .line 11
+    :cond_0
+    new-instance v0, Lokhttp3/g;
+
+    .line 12
+    .line 13
+    iget-object v1, p0, Lokhttp3/g;->a:Ljava/util/Set;
+
+    .line 14
+    .line 15
+    invoke-direct {v0, v1, p1}, Lokhttp3/g;-><init>(Ljava/util/Set;Lu5/c;)V
+
+    .line 16
+    .line 17
+    .line 18
+    :goto_0
+    return-object v0
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    const/4 v0, 0x1
+
+    if-ne p1, p0, :cond_0
+
+    return v0
+
+    :cond_0
+    instance-of v1, p1, Lokhttp3/g;
+
+    if-eqz v1, :cond_1
+
+    iget-object v1, p0, Lokhttp3/g;->b:Lu5/c;
+
+    check-cast p1, Lokhttp3/g;
+
+    iget-object v2, p1, Lokhttp3/g;->b:Lu5/c;
+
+    invoke-static {v1, v2}, Ll5/c;->q(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    iget-object v1, p0, Lokhttp3/g;->a:Ljava/util/Set;
+
+    iget-object p1, p1, Lokhttp3/g;->a:Ljava/util/Set;
+
+    invoke-interface {v1, p1}, Ljava/util/Set;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public hashCode()I
+    .locals 2
+
+    iget-object v0, p0, Lokhttp3/g;->b:Lu5/c;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v1, p0, Lokhttp3/g;->a:Ljava/util/Set;
+
+    invoke-interface {v1}, Ljava/util/Set;->hashCode()I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    return v0
+.end method

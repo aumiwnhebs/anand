@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@id/outSideView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@id/zhView"
+        android:background="@drawable/bgdp14"
+        android:paddingTop="@dimen/dp18"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/dp47"
+        android:layout_marginEnd="@dimen/dp47">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp28"
+            android:layout_marginLeft="@dimen/dp37"
+            android:layout_marginRight="@dimen/dp37"
+            android:src="@mipmap/be_img"
+            android:scaleType="fitXY"
+            android:layout_marginHorizontal="@dimen/dp37" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp22"
+            android:layout_marginBottom="@dimen/dp18"
+            android:weightSum="2.0">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@id/leftView"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp41"
+                    android:src="@mipmap/be_left"
+                    android:scaleType="fitXY" />
+                <TextView
+                    android:textSize="@dimen/sp14"
+                    android:textStyle="bold"
+                    android:textColor="#ff010101"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp6"
+                    android:text="@string/watch_rs" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@id/rightView"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp41"
+                    android:src="@mipmap/be_right"
+                    android:scaleType="fitXY" />
+                <TextView
+                    android:textSize="@dimen/sp14"
+                    android:textStyle="bold"
+                    android:textColor="#ff010101"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp6"
+                    android:text="@string/watch_usdt" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@id/xImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp15"
+        android:src="@mipmap/x_white"
+        android:layout_below="@id/zhView"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

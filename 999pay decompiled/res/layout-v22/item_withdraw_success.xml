@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@drawable/bgdp12"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@id/topView"
+        android:background="@drawable/bg_rounded_top_rect_green"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@id/leftImg"
+            android:layout_width="@dimen/dp32"
+            android:layout_height="@dimen/dp32"
+            android:src="@mipmap/bg_wthdraw_success"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp11" />
+        <RelativeLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/leftImg">
+            <TextView
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold"
+                android:textColor="#ff010101"
+                android:gravity="center_vertical"
+                android:id="@id/orderNoTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100Rs"
+                android:layout_marginStart="@dimen/dp2"
+                android:layout_marginEnd="@dimen/dp2" />
+            <ImageView
+                android:id="@id/copyViewOrderNo"
+                android:layout_width="@dimen/dp24"
+                android:layout_height="@dimen/dp24"
+                android:src="@mipmap/copy3"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16"
+        android:paddingBottom="@dimen/dp10"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topView"
+        android:paddingHorizontal="@dimen/dp16">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp14">
+            <TextView
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold"
+                android:textColor="#ff505377"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/withdraw_amount"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold"
+                android:textColor="#ff010101"
+                android:id="@id/amountTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp14">
+            <TextView
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold"
+                android:textColor="#ff505377"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/withdraw_time"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold"
+                android:textColor="#ff010101"
+                android:id="@id/withdrawTimeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp14">
+            <TextView
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold"
+                android:textColor="#ff505377"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/arrival_time"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold"
+                android:textColor="#ff010101"
+                android:id="@id/arrivalTimeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- - -"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp14">
+            <TextView
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold"
+                android:textColor="#ff505377"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/withdraw_tool"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold"
+                android:textColor="#ff010101"
+                android:id="@id/toolsNameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp14">
+            <TextView
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold"
+                android:textColor="#ff505377"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upi"
+                android:layout_centerVertical="true" />
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true">
+                <TextView
+                    android:textSize="@dimen/sp14"
+                    android:textStyle="bold"
+                    android:textColor="#ff010101"
+                    android:id="@id/upiTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@id/copyViewUPI"
+                    android:layout_width="@dimen/dp24"
+                    android:layout_height="@dimen/dp24"
+                    android:src="@mipmap/copy3"
+                    android:layout_marginStart="@dimen/dp4" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp14">
+            <TextView
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold"
+                android:textColor="#ff505377"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/utr"
+                android:layout_centerVertical="true" />
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true">
+                <TextView
+                    android:textSize="@dimen/sp14"
+                    android:textStyle="bold"
+                    android:textColor="#ff010101"
+                    android:id="@id/utrTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@id/copyViewUTR"
+                    android:layout_width="@dimen/dp24"
+                    android:layout_height="@dimen/dp24"
+                    android:src="@mipmap/copy3"
+                    android:layout_marginStart="@dimen/dp4" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

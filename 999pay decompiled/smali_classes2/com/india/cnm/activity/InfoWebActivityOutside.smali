@@ -1,0 +1,599 @@
+.class public Lcom/india/cnm/activity/InfoWebActivityOutside;
+.super Lcom/india/cnm/base/BaseActivity;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/india/cnm/activity/InfoWebActivityOutside$WebChromeClient;
+    }
+.end annotation
+
+
+# instance fields
+.field aniRel:Landroid/widget/RelativeLayout;
+    .annotation runtime Lbutterknife/BindView;
+    .end annotation
+.end field
+
+.field dialog:Lcom/india/cnm/utils/LoadingDialog;
+
+.field from:I
+
+.field ivBack:Landroid/widget/ImageView;
+    .annotation runtime Lbutterknife/BindView;
+    .end annotation
+.end field
+
+.field ldyUrl:Ljava/lang/String;
+
+.field protected mAgentWeb:Lcom/just/agentweb/AgentWeb;
+
+.field mLinearLayout:Landroid/widget/LinearLayout;
+    .annotation runtime Lbutterknife/BindView;
+    .end annotation
+.end field
+
+.field private mWebChromeClient:Lcom/just/agentweb/WebChromeClient;
+
+.field private mWebViewClient:Lcom/just/agentweb/WebViewClient;
+
+.field sfl_layout:Lcom/india/cnm/view/shimmer/ShimmerFrameLayout;
+    .annotation runtime Lbutterknife/BindView;
+    .end annotation
+.end field
+
+.field title:Ljava/lang/String;
+
+.field tvTitle:Landroid/widget/TextView;
+    .annotation runtime Lbutterknife/BindView;
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    invoke-direct {p0}, Lcom/india/cnm/base/BaseActivity;-><init>()V
+
+    const/16 v0, 0x64
+
+    iput v0, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->from:I
+
+    const-string v0, ""
+
+    iput-object v0, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->ldyUrl:Ljava/lang/String;
+
+    iput-object v0, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->title:Ljava/lang/String;
+
+    new-instance v0, Lcom/india/cnm/activity/InfoWebActivityOutside$1;
+
+    invoke-direct {v0, p0}, Lcom/india/cnm/activity/InfoWebActivityOutside$1;-><init>(Lcom/india/cnm/activity/InfoWebActivityOutside;)V
+
+    iput-object v0, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->mWebViewClient:Lcom/just/agentweb/WebViewClient;
+
+    new-instance v0, Lcom/india/cnm/activity/InfoWebActivityOutside$2;
+
+    invoke-direct {v0, p0}, Lcom/india/cnm/activity/InfoWebActivityOutside$2;-><init>(Lcom/india/cnm/activity/InfoWebActivityOutside;)V
+
+    iput-object v0, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->mWebChromeClient:Lcom/just/agentweb/WebChromeClient;
+
+    return-void
+.end method
+
+.method public static start(Landroid/content/Context;I)V
+    .locals 2
+
+    .line 1
+    new-instance v0, Landroid/content/Intent;
+
+    const-class v1, Lcom/india/cnm/activity/InfoWebActivityOutside;
+
+    invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    const-string v1, "from"
+
+    invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+
+    return-void
+.end method
+
+.method public static start(Landroid/content/Context;ILjava/lang/String;)V
+    .locals 2
+
+    .line 2
+    new-instance v0, Landroid/content/Intent;
+
+    const-class v1, Lcom/india/cnm/activity/InfoWebActivityOutside;
+
+    invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    const-string v1, "from"
+
+    invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    const-string p1, "ldyUrl"
+
+    invoke-virtual {v0, p1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+
+    return-void
+.end method
+
+.method public static start(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 2
+
+    .line 3
+    new-instance v0, Landroid/content/Intent;
+
+    const-class v1, Lcom/india/cnm/activity/InfoWebActivityOutside;
+
+    invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    const-string v1, "title"
+
+    invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    const-string p1, "ldyUrl"
+
+    invoke-virtual {v0, p1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected getLayoutId()I
+    .locals 1
+
+    const v0, 0x7f0c0030
+
+    return v0
+.end method
+
+.method protected initImmersionBar()V
+    .locals 2
+
+    invoke-super {p0}, Lcom/india/cnm/base/BaseActivity;->initImmersionBar()V
+
+    invoke-static {p0}, Lcom/gyf/immersionbar/o;->m0(Landroid/app/Activity;)Lcom/gyf/immersionbar/o;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Lcom/gyf/immersionbar/o;->g0(Z)Lcom/gyf/immersionbar/o;
+
+    move-result-object v0
+
+    const v1, 0x7f060033
+
+    invoke-virtual {v0, v1}, Lcom/gyf/immersionbar/o;->M(I)Lcom/gyf/immersionbar/o;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/gyf/immersionbar/o;->E()V
+
+    return-void
+.end method
+
+.method protected onActivityResult(IILandroid/content/Intent;)V
+    .locals 2
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "onResult:"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, " onResult:"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-super {p0, p1, p2, p3}, Landroidx/fragment/app/FragmentActivity;->onActivityResult(IILandroid/content/Intent;)V
+
+    return-void
+.end method
+
+.method public onClick(Landroid/view/View;)V
+    .locals 1
+    .annotation runtime Lbutterknife/OnClick;
+    .end annotation
+
+    invoke-virtual {p1}, Landroid/view/View;->getId()I
+
+    move-result p1
+
+    const v0, 0x7f09009f
+
+    if-eq p1, v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+
+    :goto_0
+    return-void
+.end method
+
+.method protected onCreate(Landroid/os/Bundle;)V
+    .locals 5
+
+    invoke-super {p0, p1}, Lcom/india/cnm/base/BaseActivity;->onCreate(Landroid/os/Bundle;)V
+
+    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+
+    move-result-object p1
+
+    const-string v0, "from"
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p1, v0, v1}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+
+    move-result p1
+
+    iput p1, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->from:I
+
+    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+
+    move-result-object p1
+
+    const-string v0, "ldyUrl"
+
+    invoke-virtual {p1, v0}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->ldyUrl:Ljava/lang/String;
+
+    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+
+    move-result-object p1
+
+    const-string v0, "title"
+
+    invoke-virtual {p1, v0}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->title:Ljava/lang/String;
+
+    iget v0, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->from:I
+
+    const/16 v2, 0x37
+
+    if-eq v0, v2, :cond_0
+
+    const-string v2, ""
+
+    const-string v3, "?channel="
+
+    const-string v4, "\u5ba2\u670d\u54a8\u8be2"
+
+    packed-switch v0, :pswitch_data_0
+
+    iget-object v0, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->tvTitle:Landroid/widget/TextView;
+
+    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    goto :goto_2
+
+    :pswitch_0
+    iget-object p1, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->tvTitle:Landroid/widget/TextView;
+
+    invoke-virtual {p1, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    :goto_0
+    sget-object v0, Lcom/india/cnm/api/CpiConstant;->service_link:Ljava/lang/String;
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget-object v0, Lcom/india/cnm/api/CpiConstant;->channel:Ljava/lang/String;
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    :goto_1
+    iput-object p1, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->ldyUrl:Ljava/lang/String;
+
+    goto :goto_2
+
+    :pswitch_1
+    iget-object p1, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->tvTitle:Landroid/widget/TextView;
+
+    invoke-virtual {p1, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    goto :goto_0
+
+    :pswitch_2
+    iget-object p1, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->tvTitle:Landroid/widget/TextView;
+
+    const-string v0, "\u7528\u6237\u534f\u8bae"
+
+    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    sget-object p1, Lcom/india/cnm/api/CpiConstant;->ysxy:Ljava/lang/String;
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_1
+
+    sget-object p1, Lcom/india/cnm/api/CpiConstant;->ysxy:Ljava/lang/String;
+
+    goto :goto_1
+
+    :pswitch_3
+    iget-object p1, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->tvTitle:Landroid/widget/TextView;
+
+    const-string v0, "\u9690\u79c1\u534f\u8bae"
+
+    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    sget-object p1, Lcom/india/cnm/api/CpiConstant;->yhxy:Ljava/lang/String;
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_1
+
+    sget-object p1, Lcom/india/cnm/api/CpiConstant;->yhxy:Ljava/lang/String;
+
+    goto :goto_1
+
+    :cond_0
+    iget-object p1, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->tvTitle:Landroid/widget/TextView;
+
+    const-string v0, "LT"
+
+    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    :cond_1
+    :goto_2
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    invoke-static {p0}, Lcom/just/agentweb/AgentWeb;->with(Landroid/app/Activity;)Lcom/just/agentweb/AgentWeb$AgentBuilder;
+
+    move-result-object p1
+
+    iget-object v0, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->mLinearLayout:Landroid/widget/LinearLayout;
+
+    new-instance v2, Landroid/widget/LinearLayout$LayoutParams;
+
+    const/4 v3, -0x1
+
+    invoke-direct {v2, v3, v3}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
+
+    invoke-virtual {p1, v0, v2}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->setAgentWebParent(Landroid/view/ViewGroup;Landroid/view/ViewGroup$LayoutParams;)Lcom/just/agentweb/AgentWeb$IndicatorBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/just/agentweb/AgentWeb$IndicatorBuilder;->useDefaultIndicator()Lcom/just/agentweb/AgentWeb$CommonBuilder;
+
+    move-result-object p1
+
+    iget-object v0, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->mWebChromeClient:Lcom/just/agentweb/WebChromeClient;
+
+    invoke-virtual {p1, v0}, Lcom/just/agentweb/AgentWeb$CommonBuilder;->setWebChromeClient(Lcom/just/agentweb/WebChromeClient;)Lcom/just/agentweb/AgentWeb$CommonBuilder;
+
+    move-result-object p1
+
+    iget-object v0, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->mWebViewClient:Lcom/just/agentweb/WebViewClient;
+
+    invoke-virtual {p1, v0}, Lcom/just/agentweb/AgentWeb$CommonBuilder;->setWebViewClient(Lcom/just/agentweb/WebViewClient;)Lcom/just/agentweb/AgentWeb$CommonBuilder;
+
+    move-result-object p1
+
+    const v0, 0x7f0c0044
+
+    invoke-virtual {p1, v0, v3}, Lcom/just/agentweb/AgentWeb$CommonBuilder;->setMainFrameErrorView(II)Lcom/just/agentweb/AgentWeb$CommonBuilder;
+
+    move-result-object p1
+
+    sget-object v0, Lcom/just/agentweb/AgentWeb$SecurityType;->STRICT_CHECK:Lcom/just/agentweb/AgentWeb$SecurityType;
+
+    invoke-virtual {p1, v0}, Lcom/just/agentweb/AgentWeb$CommonBuilder;->setSecurityType(Lcom/just/agentweb/AgentWeb$SecurityType;)Lcom/just/agentweb/AgentWeb$CommonBuilder;
+
+    move-result-object p1
+
+    sget-object v0, Lcom/just/agentweb/DefaultWebClient$OpenOtherPageWays;->ASK:Lcom/just/agentweb/DefaultWebClient$OpenOtherPageWays;
+
+    invoke-virtual {p1, v0}, Lcom/just/agentweb/AgentWeb$CommonBuilder;->setOpenOtherPageWays(Lcom/just/agentweb/DefaultWebClient$OpenOtherPageWays;)Lcom/just/agentweb/AgentWeb$CommonBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/just/agentweb/AgentWeb$CommonBuilder;->interceptUnkownUrl()Lcom/just/agentweb/AgentWeb$CommonBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/just/agentweb/AgentWeb$CommonBuilder;->createAgentWeb()Lcom/just/agentweb/AgentWeb$PreAgentWeb;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/just/agentweb/AgentWeb$PreAgentWeb;->ready()Lcom/just/agentweb/AgentWeb$PreAgentWeb;
+
+    move-result-object p1
+
+    iget-object v0, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->ldyUrl:Ljava/lang/String;
+
+    invoke-virtual {p1, v0}, Lcom/just/agentweb/AgentWeb$PreAgentWeb;->go(Ljava/lang/String;)Lcom/just/agentweb/AgentWeb;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->mAgentWeb:Lcom/just/agentweb/AgentWeb;
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "ldyurl:"
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v0, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->ldyUrl:Ljava/lang/String;
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object p1, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->mAgentWeb:Lcom/just/agentweb/AgentWeb;
+
+    invoke-virtual {p1}, Lcom/just/agentweb/AgentWeb;->getWebCreator()Lcom/just/agentweb/WebCreator;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Lcom/just/agentweb/WebCreator;->getWebView()Landroid/webkit/WebView;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
+
+    move-result-object v0
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+
+    invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setSupportZoom(Z)V
+
+    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setBuiltInZoomControls(Z)V
+
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lcom/just/agentweb/AgentWebUtils;->checkNetwork(Landroid/content/Context;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    invoke-virtual {v0, v3}, Landroid/webkit/WebSettings;->setCacheMode(I)V
+
+    goto :goto_3
+
+    :cond_2
+    invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setCacheMode(I)V
+
+    :goto_3
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x5b
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method protected onDestroy()V
+    .locals 1
+
+    invoke-super {p0}, Lcom/india/cnm/base/BaseActivity;->onDestroy()V
+
+    iget-object v0, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->mAgentWeb:Lcom/just/agentweb/AgentWeb;
+
+    invoke-virtual {v0}, Lcom/just/agentweb/AgentWeb;->getWebLifeCycle()Lcom/just/agentweb/WebLifeCycle;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lcom/just/agentweb/WebLifeCycle;->onDestroy()V
+
+    return-void
+.end method
+
+.method public onKeyDown(ILandroid/view/KeyEvent;)Z
+    .locals 1
+
+    iget-object v0, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->mAgentWeb:Lcom/just/agentweb/AgentWeb;
+
+    invoke-virtual {v0, p1, p2}, Lcom/just/agentweb/AgentWeb;->handleKeyEvent(ILandroid/view/KeyEvent;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 p1, 0x1
+
+    return p1
+
+    :cond_0
+    invoke-super {p0, p1, p2}, Landroidx/appcompat/app/AppCompatActivity;->onKeyDown(ILandroid/view/KeyEvent;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method protected onPause()V
+    .locals 1
+
+    iget-object v0, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->mAgentWeb:Lcom/just/agentweb/AgentWeb;
+
+    invoke-virtual {v0}, Lcom/just/agentweb/AgentWeb;->getWebLifeCycle()Lcom/just/agentweb/WebLifeCycle;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lcom/just/agentweb/WebLifeCycle;->onPause()V
+
+    invoke-super {p0}, Lcom/india/cnm/base/BaseActivity;->onPause()V
+
+    return-void
+.end method
+
+.method protected onResume()V
+    .locals 1
+
+    invoke-super {p0}, Lcom/india/cnm/base/BaseActivity;->onResume()V
+
+    iget-object v0, p0, Lcom/india/cnm/activity/InfoWebActivityOutside;->mAgentWeb:Lcom/just/agentweb/AgentWeb;
+
+    invoke-virtual {v0}, Lcom/just/agentweb/AgentWeb;->getWebLifeCycle()Lcom/just/agentweb/WebLifeCycle;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lcom/just/agentweb/WebLifeCycle;->onResume()V
+
+    iget-object v0, p0, Lcom/india/cnm/base/BaseActivity;->mActivity:Landroid/app/Activity;
+
+    invoke-static {v0}, Lj4/n;->k(Landroid/content/Context;)V
+
+    return-void
+.end method

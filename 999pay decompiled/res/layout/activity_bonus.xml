@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:orientation="vertical"
+    android:background="#fff2f5fa"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@id/vp_launch"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@id/appBarLayout"
+        android:background="#fff2f5fa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:expanded="true"
+        app:layout_behavior=".utils.FixAppBarLayoutBehavior"
+        app:layout_scrollFlags="scroll">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@id/collapsingToolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/transparent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@id/toolbar"
+                android:tag="123"
+                android:background="@color/white"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp80"
+                app:contentInsetEnd="0.0dip"
+                app:contentInsetStart="0.0dip"
+                app:layout_collapseMode="pin">
+                <RelativeLayout
+                    android:id="@id/titleView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dp50"
+                        android:layout_marginTop="@dimen/dp30"
+                        android:paddingStart="@dimen/dp16">
+                        <TextView
+                            android:textSize="@dimen/sp17"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bonus2"
+                            android:layout_centerInParent="true" />
+                        <ImageView
+                            android:id="@id/backImg"
+                            android:layout_width="@dimen/dp24"
+                            android:layout_height="@dimen/dp24"
+                            android:src="@mipmap/back"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentStart="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/dp12"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp48">
+                <TextView
+                    android:textSize="@dimen/sp17"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:id="@id/tv_newbie"
+                    android:background="@drawable/bg_purple_solid_rounded"
+                    android:paddingLeft="@dimen/dp24"
+                    android:paddingTop="@dimen/dp6"
+                    android:paddingRight="@dimen/dp24"
+                    android:paddingBottom="@dimen/dp6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/newbie" />
+                <View
+                    android:layout_width="@dimen/dp40"
+                    android:layout_height="fill_parent" />
+                <TextView
+                    android:textSize="@dimen/sp17"
+                    android:textStyle="bold"
+                    android:textColor="@color/Co505377"
+                    android:id="@id/tv_mentoring"
+                    android:paddingLeft="@dimen/dp24"
+                    android:paddingTop="@dimen/dp6"
+                    android:paddingRight="@dimen/dp24"
+                    android:paddingBottom="@dimen/dp6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mentoring" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

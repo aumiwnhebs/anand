@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bgdp14"
+        android:paddingTop="@dimen/dp11"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/dp47"
+        android:layout_marginEnd="@dimen/dp47">
+        <TextView
+            android:textSize="@dimen/sp18"
+            android:textStyle="bold"
+            android:textColor="#ff000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp12"
+            android:text="Select Tool" />
+        <View
+            android:background="#33707070"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp1" />
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:orientation="vertical"
+                        android:id="@id/rvSelect"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginBottom="@dimen/dp13"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <TextView
+            android:textSize="@dimen/sp12"
+            android:textStyle="bold"
+            android:textColor="#ffff0000"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp14"
+            android:layout_marginRight="@dimen/dp14"
+            android:layout_marginBottom="@dimen/dp46"
+            android:text="* After selecting the payment tool, please use the selected tool to make payment, otherwise the account will not be credited"
+            android:lineSpacingExtra="@dimen/dp6"
+            android:layout_marginHorizontal="@dimen/dp14" />
+        <View
+            android:background="@color/grayline"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp1" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/ll_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/sp16"
+                android:textColor="#ff030f08"
+                android:gravity="center"
+                android:id="@id/cancelTxt"
+                android:paddingTop="@dimen/dp11"
+                android:paddingBottom="@dimen/dp11"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:layout_weight="1.0" />
+            <View
+                android:layout_gravity="center_vertical"
+                android:background="@color/grayline"
+                android:layout_width="@dimen/dp1"
+                android:layout_height="fill_parent" />
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+                <TextView
+                    android:textSize="@dimen/sp16"
+                    android:textStyle="bold"
+                    android:textColor="@color/CoMainA"
+                    android:gravity="center"
+                    android:id="@id/confirmTxt"
+                    android:paddingTop="@dimen/dp11"
+                    android:paddingBottom="@dimen/dp11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/confirm" />
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@id/avi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:alpha="0.0"
+                    app:indicatorColor="@color/CoMainA"
+                    app:indicatorName="BallPulseIndicator"
+                    style="@style/AVLoadingIndicatorView" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

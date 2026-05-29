@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/container"
+    android:fitsSystemWindows="false"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/titleView"
+        android:background="#ffe7eafa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:paddingLeft="@dimen/dp18"
+            android:paddingRight="@dimen/dp18"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp52"
+            android:layout_marginTop="@dimen/dp30"
+            android:weightSum="2.0"
+            android:paddingHorizontal="@dimen/dp18">
+            <TextView
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold"
+                android:textColor="#ff010101"
+                android:gravity="center"
+                android:id="@id/controlTxt"
+                android:background="@drawable/bgdp8"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/dp44"
+                android:foreground="?android:selectableItemBackground"
+                android:text="@string/control"
+                android:layout_weight="1.0"
+                android:layout_marginEnd="@dimen/dp20" />
+            <TextView
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:gravity="center"
+                android:id="@id/finishTxt"
+                android:background="@drawable/bgdp8main"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/dp44"
+                android:foreground="?android:selectableItemBackground"
+                android:text="@string/finish"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@id/aniRel"
+        android:background="@color/CoMainA"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.india.cnm.view.shimmer.ShimmerFrameLayout
+            android:id="@id/sfl_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:shimmer_duration="1000">
+            <TextView
+                android:textSize="@dimen/sp35"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:id="@id/loadTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp100"
+                android:text="@string/app_name"
+                android:alpha="0.85" />
+        </com.india.cnm.view.shimmer.ShimmerFrameLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@id/outSideView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bgdp14"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp29"
+        android:layout_marginRight="@dimen/dp29"
+        android:layout_centerInParent="true">
+        <RelativeLayout
+            android:paddingTop="@dimen/dp14"
+            android:paddingBottom="@dimen/dp14"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/sp18"
+                android:textStyle="bold"
+                android:textColor="#ff010101"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status_description"
+                android:layout_centerHorizontal="true" />
+            <ImageView
+                android:id="@id/xImg"
+                android:layout_width="@dimen/dp26"
+                android:layout_height="@dimen/dp26"
+                android:src="@mipmap/x_dia"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp14"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View
+            android:background="#33707070"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp1"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10" />
+        <TextView
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold"
+            android:textColor="#ff010101"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp14"
+            android:layout_marginRight="@dimen/dp16"
+            android:layout_marginBottom="@dimen/dp45"
+            android:text="@string/available_normal_n_pause_suspend_authorization_n_please_re_link_n_authorizing_waiting_for_third_party_authorization_n_pending_to_be_determined_please_contact_customer_service_for_long_term_pending_decisions_n_unavailable_please_contact_customerservice_if_disabled_for_a_long_time"
+            android:lineSpacingExtra="@dimen/dp8" />
+    </LinearLayout>
+</RelativeLayout>

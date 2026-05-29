@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="false"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/titleView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp30" />
+        <RelativeLayout
+            android:background="@drawable/bgdp_bot_12"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp50"
+            android:paddingStart="@dimen/dp16">
+            <TextView
+                android:textSize="@dimen/sp17"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_upi"
+                android:layout_centerInParent="true" />
+            <ImageView
+                android:id="@id/backImg"
+                android:layout_width="@dimen/dp24"
+                android:layout_height="@dimen/dp24"
+                android:src="@mipmap/back"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp16"
+            android:paddingTop="@dimen/dp20"
+            android:paddingRight="@dimen/dp16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold"
+                android:textColor="#ff333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp15"
+                android:text="@string/partner" />
+            <TextView
+                android:textSize="@dimen/sp18"
+                android:textStyle="bold"
+                android:textColor="#4d010101"
+                android:gravity="center_vertical"
+                android:id="@id/nameTxt"
+                android:background="@drawable/bgdp12stroke"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingRight="@dimen/dp20"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp52" />
+            <TextView
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold"
+                android:textColor="#ff333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp24"
+                android:text="@string/account" />
+            <TextView
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textColorHint="#ff777777"
+                android:gravity="center_vertical"
+                android:id="@id/accountEt"
+                android:background="@drawable/bgdp12stroke"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingRight="@dimen/dp20"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginTop="@dimen/dp15"
+                android:singleLine="true"
+                android:maxLength="50"
+                android:textCursorDrawable="@drawable/bgcursor" />
+            <TextView
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold"
+                android:textColor="#ff333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp31"
+                android:layout_marginBottom="@dimen/dp10"
+                android:text="@string/upi" />
+            <RelativeLayout
+                android:id="@id/upiView"
+                android:background="@drawable/bgdp12stroke"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp50"
+                android:paddingStart="@dimen/dp20"
+                android:paddingEnd="@dimen/dp13">
+                <TextView
+                    android:textSize="@dimen/sp16"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textColorHint="#4d010101"
+                    android:gravity="center_vertical"
+                    android:id="@id/upiTxt"
+                    android:background="@null"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:hint="@string/choice_upi"
+                    android:singleLine="true"
+                    android:maxLength="50" />
+                <ImageView
+                    android:layout_width="@dimen/dp37"
+                    android:layout_height="@dimen/dp37"
+                    android:src="@mipmap/xia_f"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <TextView
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:gravity="center"
+                android:id="@id/editTxt"
+                android:background="@drawable/bgdp8main"
+                android:paddingTop="@dimen/dp16"
+                android:paddingBottom="@dimen/dp16"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp32"
+                android:layout_marginBottom="@dimen/dp15"
+                android:text="@string/save" />
+            <TextView
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold"
+                android:textColor="#ffff0000"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp15"
+                android:text="@string/if_you_want_to_choose_a_new_upi_please_transfer_1rs_to_the_new_upi_and_try_again"
+                android:lineSpacingExtra="@dimen/dp5" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

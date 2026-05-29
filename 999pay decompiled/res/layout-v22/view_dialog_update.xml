@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/update_dialog"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@id/iv_dialog"
+        android:layout_width="@dimen/dp277"
+        android:layout_height="@dimen/dp369"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@id/iv_dialog_close"
+        android:visibility="gone"
+        android:layout_width="@dimen/dp30"
+        android:layout_height="@dimen/dp30"
+        android:layout_marginBottom="@dimen/dp360"
+        android:layout_marginStart="@dimen/dp200"
+        android:layout_marginEnd="@dimen/dp_10"
+        app:layout_constraintRight_toRightOf="@id/iv_dialog"
+        app:layout_constraintTop_toTopOf="@id/iv_dialog" />
+    <View
+        android:id="@id/btn_update"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp200"
+        app:layout_constraintBottom_toBottomOf="@id/iv_dialog"
+        app:layout_constraintLeft_toLeftOf="@id/iv_dialog"
+        app:layout_constraintRight_toRightOf="@id/iv_dialog" />
+    <TextView
+        android:textSize="@dimen/sp12"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@id/openWebTxt"
+        android:background="@drawable/bgdp4main"
+        android:paddingLeft="@dimen/dp12"
+        android:paddingTop="@dimen/dp4"
+        android:paddingRight="@dimen/dp12"
+        android:paddingBottom="@dimen/dp4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp12"
+        android:text="@string/download_apk_via_browser"
+        android:layout_centerInParent="true"
+        android:paddingHorizontal="@dimen/dp12"
+        android:paddingVertical="@dimen/dp4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_dialog" />
+    <TextView
+        android:textSize="@dimen/sp12"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@id/versionTxt"
+        android:paddingTop="@dimen/dp2"
+        android:paddingBottom="@dimen/dp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp2"
+        android:layout_below="@id/openWebTxt"
+        android:layout_centerHorizontal="true"
+        android:paddingVertical="@dimen/dp2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/openWebTxt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

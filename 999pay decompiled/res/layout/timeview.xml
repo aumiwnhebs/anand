@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/bgdp16top"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/dp200"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:paddingTop="@dimen/dp19"
+        android:paddingRight="@dimen/dp16"
+        android:paddingBottom="@dimen/dp17"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/sp16"
+            android:textColor="#ffbfbfbf"
+            android:id="@id/cancelTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp16"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold"
+            android:textColor="#ff333333"
+            android:gravity="center"
+            android:id="@id/titleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_date"
+            android:lines="1"
+            android:layout_toLeftOf="@id/tv_finish"
+            android:layout_toRightOf="@id/cancelTxt"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10" />
+        <TextView
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold"
+            android:textColor="@color/CoMainA"
+            android:id="@id/tv_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View
+        android:background="#ffeeeeee"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp1" />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@id/timepicker"
+        android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:minHeight="150.0dip">
+        <com.contrarywind.view.WheelView
+            android:id="@id/day"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.1" />
+        <com.contrarywind.view.WheelView
+            android:id="@id/month"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.1" />
+        <com.contrarywind.view.WheelView
+            android:id="@id/year"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+        <com.contrarywind.view.WheelView
+            android:id="@id/hour"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.1" />
+        <com.contrarywind.view.WheelView
+            android:id="@id/min"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.1" />
+        <com.contrarywind.view.WheelView
+            android:id="@id/second"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.1" />
+    </LinearLayout>
+</LinearLayout>

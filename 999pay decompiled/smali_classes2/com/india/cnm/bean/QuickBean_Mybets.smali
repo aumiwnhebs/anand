@@ -1,0 +1,257 @@
+.class public Lcom/india/cnm/bean/QuickBean_Mybets;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field private codes:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lcom/india/cnm/bean/CodesBean;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private createdTime:Ljava/lang/String;
+
+.field private drawTime:Ljava/lang/String;
+
+.field private icon:Ljava/lang/String;
+
+.field private issueNo:Ljava/lang/String;
+
+.field private number:Ljava/lang/String;
+
+.field private orderDraw:Ljava/lang/String;
+
+.field private orderGroup:Ljava/lang/String;
+
+.field private pickId:Ljava/lang/Integer;
+
+.field private pickName:Ljava/lang/String;
+
+.field private totalAmount:Ljava/lang/Double;
+
+.field private wonAmount:Ljava/lang/Double;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getCodes()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lcom/india/cnm/bean/CodesBean;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/india/cnm/bean/QuickBean_Mybets;->codes:Ljava/util/List;
+
+    return-object v0
+.end method
+
+.method public getCreatedTime()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/india/cnm/bean/QuickBean_Mybets;->createdTime:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getDrawTime()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/india/cnm/bean/QuickBean_Mybets;->drawTime:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getIcon()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/india/cnm/bean/QuickBean_Mybets;->icon:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getIssueNo()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/india/cnm/bean/QuickBean_Mybets;->issueNo:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getNumber()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/india/cnm/bean/QuickBean_Mybets;->number:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getOrderDraw()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/india/cnm/bean/QuickBean_Mybets;->orderDraw:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getOrderGroup()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/india/cnm/bean/QuickBean_Mybets;->orderGroup:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getPickId()Ljava/lang/Integer;
+    .locals 1
+
+    iget-object v0, p0, Lcom/india/cnm/bean/QuickBean_Mybets;->pickId:Ljava/lang/Integer;
+
+    return-object v0
+.end method
+
+.method public getPickName()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/india/cnm/bean/QuickBean_Mybets;->pickName:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getTotalAmount()Ljava/lang/Double;
+    .locals 1
+
+    iget-object v0, p0, Lcom/india/cnm/bean/QuickBean_Mybets;->totalAmount:Ljava/lang/Double;
+
+    return-object v0
+.end method
+
+.method public getWonAmount()Ljava/lang/Double;
+    .locals 1
+
+    iget-object v0, p0, Lcom/india/cnm/bean/QuickBean_Mybets;->wonAmount:Ljava/lang/Double;
+
+    return-object v0
+.end method
+
+.method public setCodes(Ljava/util/List;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lcom/india/cnm/bean/CodesBean;",
+            ">;)V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Lcom/india/cnm/bean/QuickBean_Mybets;->codes:Ljava/util/List;
+
+    return-void
+.end method
+
+.method public setCreatedTime(Ljava/lang/String;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/india/cnm/bean/QuickBean_Mybets;->createdTime:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public setDrawTime(Ljava/lang/String;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/india/cnm/bean/QuickBean_Mybets;->drawTime:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public setIcon(Ljava/lang/String;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/india/cnm/bean/QuickBean_Mybets;->icon:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public setIssueNo(Ljava/lang/String;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/india/cnm/bean/QuickBean_Mybets;->issueNo:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public setNumber(Ljava/lang/String;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/india/cnm/bean/QuickBean_Mybets;->number:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public setOrderDraw(Ljava/lang/String;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/india/cnm/bean/QuickBean_Mybets;->orderDraw:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public setOrderGroup(Ljava/lang/String;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/india/cnm/bean/QuickBean_Mybets;->orderGroup:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public setPickId(Ljava/lang/Integer;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/india/cnm/bean/QuickBean_Mybets;->pickId:Ljava/lang/Integer;
+
+    return-void
+.end method
+
+.method public setPickName(Ljava/lang/String;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/india/cnm/bean/QuickBean_Mybets;->pickName:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public setTotalAmount(Ljava/lang/Double;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/india/cnm/bean/QuickBean_Mybets;->totalAmount:Ljava/lang/Double;
+
+    return-void
+.end method
+
+.method public setWonAmount(Ljava/lang/Double;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/india/cnm/bean/QuickBean_Mybets;->wonAmount:Ljava/lang/Double;
+
+    return-void
+.end method

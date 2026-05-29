@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@mipmap/tuto_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView
+        android:id="@id/nestedView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/topLin"
+            android:paddingLeft="@dimen/dp12"
+            android:paddingTop="@dimen/dp77"
+            android:paddingRight="@dimen/dp12"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/dp12">
+            <ImageView
+                android:layout_width="@dimen/dp71"
+                android:layout_height="@dimen/dp71"
+                android:src="@mipmap/logo" />
+            <TextView
+                android:textSize="@dimen/sp20"
+                android:textStyle="bold"
+                android:textColor="#ff000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp17"
+                android:text="Welcome to join Fendpay" />
+            <TextView
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold"
+                android:textColor="#ff505377"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp12"
+                android:text="Complete the following steps to make money easily" />
+            <RelativeLayout
+                android:background="@drawable/bgdp12white_s"
+                android:paddingLeft="@dimen/dp12"
+                android:paddingRight="@dimen/dp12"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp64"
+                android:layout_marginLeft="@dimen/dp3"
+                android:layout_marginTop="@dimen/dp34"
+                android:layout_marginRight="@dimen/dp3"
+                android:layout_marginBottom="@dimen/dp20"
+                android:layout_marginHorizontal="@dimen/dp3"
+                android:paddingHorizontal="@dimen/dp12">
+                <ImageView
+                    android:layout_width="@dimen/dp32"
+                    android:layout_height="@dimen/dp32"
+                    android:src="@mipmap/telegram"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:textSize="@dimen/sp16"
+                    android:textStyle="bold"
+                    android:textColor="#ff010101"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bind Telegram"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp54" />
+                <TextView
+                    android:textSize="@dimen/sp16"
+                    android:textStyle="bold"
+                    android:textColor="#ff0014ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tutorial"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@drawable/bgdp12white_s"
+                android:paddingLeft="@dimen/dp12"
+                android:paddingRight="@dimen/dp12"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp64"
+                android:layout_marginLeft="@dimen/dp3"
+                android:layout_marginRight="@dimen/dp3"
+                android:layout_marginBottom="@dimen/dp20"
+                android:layout_marginHorizontal="@dimen/dp3"
+                android:paddingHorizontal="@dimen/dp12">
+                <ImageView
+                    android:layout_width="@dimen/dp32"
+                    android:layout_height="@dimen/dp32"
+                    android:src="@mipmap/rupee"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:textSize="@dimen/sp16"
+                    android:textStyle="bold"
+                    android:textColor="#ff010101"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment in Rupee"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp54" />
+                <TextView
+                    android:textSize="@dimen/sp16"
+                    android:textStyle="bold"
+                    android:textColor="#ff0014ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tutorial"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@drawable/bgdp12white_s"
+                android:paddingLeft="@dimen/dp12"
+                android:paddingRight="@dimen/dp12"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp64"
+                android:layout_marginLeft="@dimen/dp3"
+                android:layout_marginRight="@dimen/dp3"
+                android:layout_marginBottom="@dimen/dp20"
+                android:layout_marginHorizontal="@dimen/dp3"
+                android:paddingHorizontal="@dimen/dp12">
+                <ImageView
+                    android:layout_width="@dimen/dp32"
+                    android:layout_height="@dimen/dp32"
+                    android:src="@mipmap/usdt_img"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:textSize="@dimen/sp16"
+                    android:textStyle="bold"
+                    android:textColor="#ff010101"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment in USDT"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp54" />
+                <TextView
+                    android:textSize="@dimen/sp16"
+                    android:textStyle="bold"
+                    android:textColor="#ff0014ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tutorial"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@drawable/bgdp12white_s"
+                android:paddingLeft="@dimen/dp12"
+                android:paddingRight="@dimen/dp12"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp64"
+                android:layout_marginLeft="@dimen/dp3"
+                android:layout_marginRight="@dimen/dp3"
+                android:layout_marginBottom="@dimen/dp20"
+                android:layout_marginHorizontal="@dimen/dp3"
+                android:paddingHorizontal="@dimen/dp12">
+                <ImageView
+                    android:layout_width="@dimen/dp32"
+                    android:layout_height="@dimen/dp32"
+                    android:src="@mipmap/freec"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:textSize="@dimen/sp16"
+                    android:textStyle="bold"
+                    android:textColor="#ff010101"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Free charge"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp54" />
+                <TextView
+                    android:textSize="@dimen/sp16"
+                    android:textStyle="bold"
+                    android:textColor="#ff0014ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tutorial"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <TextView
+                android:textSize="@dimen/sp17"
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bgdp12_main"
+                android:paddingLeft="@dimen/dp22"
+                android:paddingTop="@dimen/dp16"
+                android:paddingRight="@dimen/dp22"
+                android:paddingBottom="@dimen/dp16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order grabbing hall"
+                android:paddingHorizontal="@dimen/dp22"
+                android:paddingVertical="@dimen/dp16" />
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@id/xImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp30"
+                android:src="@mipmap/x_black" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <RelativeLayout
+        android:id="@id/gifRel"
+        android:background="#b3000000"
+        android:focusable="true"
+        android:visibility="gone"
+        android:clickable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/ttLin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:textSize="@dimen/sp50"
+                    android:textStyle="bold"
+                    android:textColor="#ffffba00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+ "
+                    android:shadowColor="#ff000000"
+                    android:shadowDx="0.0"
+                    android:shadowDy="3.0"
+                    android:shadowRadius="3.0" />
+                <TextView
+                    android:textSize="@dimen/sp50"
+                    android:textStyle="bold"
+                    android:textColor="#ffffba00"
+                    android:id="@id/conTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="#ff000000"
+                    android:shadowDx="0.0"
+                    android:shadowDy="3.0"
+                    android:shadowRadius="3.0" />
+                <TextView
+                    android:textSize="@dimen/sp50"
+                    android:textStyle="bold"
+                    android:textColor="#ffffba00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" RS"
+                    android:shadowColor="#ff000000"
+                    android:shadowDx="0.0"
+                    android:shadowDy="3.0"
+                    android:shadowRadius="3.0" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/ttLin2"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp19"
+                android:layout_below="@id/ttLin"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:textSize="@dimen/sp24"
+                    android:textColor="#ffffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Receive " />
+                <TextView
+                    android:textSize="@dimen/sp24"
+                    android:textStyle="bold"
+                    android:textColor="#ffffba00"
+                    android:id="@id/midTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/sp24"
+                    android:textColor="#ffffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" tomorrow" />
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@id/conView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_80"
+                android:layout_below="@id/ttLin" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@id/itemCon"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:foreground="@drawable/white_selector"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@id/titleImg"
+        android:layout_width="@dimen/dp167"
+        android:layout_height="@dimen/dp49"
+        android:src="@mipmap/k_mob"
+        android:scaleType="fitXY" />
+</RelativeLayout>

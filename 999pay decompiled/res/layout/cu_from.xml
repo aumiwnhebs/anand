@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@id/outSideView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bgdp14"
+        android:paddingLeft="@dimen/dp17"
+        android:paddingTop="@dimen/dp20"
+        android:paddingRight="@dimen/dp17"
+        android:paddingBottom="@dimen/dp20"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/dp47"
+        android:layout_marginEnd="@dimen/dp47">
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:id="@id/lowView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/sp15"
+                android:textStyle="bold"
+                android:textColor="#ff010101"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/from_high_to_low"
+                android:layout_centerVertical="true" />
+            <ImageView
+                android:id="@id/hlImg"
+                android:layout_width="@dimen/dp26"
+                android:layout_height="@dimen/dp26"
+                android:src="@mipmap/sel_b"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View
+            android:background="#33707070"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp1"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginBottom="@dimen/dp15" />
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:id="@id/highView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/sp15"
+                android:textStyle="bold"
+                android:textColor="#ff010101"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/from_low_to_high"
+                android:layout_centerVertical="true" />
+            <ImageView
+                android:id="@id/lhImg"
+                android:layout_width="@dimen/dp26"
+                android:layout_height="@dimen/dp26"
+                android:src="@mipmap/sel_b"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
